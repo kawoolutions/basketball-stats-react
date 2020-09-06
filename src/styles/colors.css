@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/********************************* color styles *******************************/
+
+.color-none
+{
+    color: none;
+}
+
+.color-white
+{
+    color: white;
+}
+
+.color-gray
+{
+    color: gray;
+}
+
+.color-black
+{
+    color: black;
+}
+
+.color-red
+{
+    color: red;
+}
+
+.color-green
+{
+    color: green;
+}
+
+.color-blue
+{
+    color: blue;
+}
+
+.color-cyan
+{
+    color: cyan;
+}
+
+.color-magenta
+{
+    color: magenta;
+}
+
+.color-yellow
+{
+    color: yellow;
+}
+
+.color-orange
+{
+    color: orange;
+}
+
+.color-purple
+{
+    color: purple;
+}
+
+.color-lime
+{
+    color: lime;
+}
+
+
+
+
+.background-color-trans
+{
+    background-color: transparent;
+}
+
+.background-color-white
+{
+    background-color: white;
+}
+
+.background-color-gray
+{
+    background-color: gray;
+}
+
+.background-color-black
+{
+    background-color: black;
+}
+
+.background-color-red
+{
+    background-color: red;
+}
+
+.background-color-green
+{
+    background-color: green;
+}
+
+.background-color-blue
+{
+    background-color: blue;
+}
+
+.background-color-cyan
+{
+    background-color: cyan;
+}
+
+.background-color-magenta
+{
+    background-color: magenta;
+}
+
+.background-color-yellow
+{
+    background-color: yellow;
+}
+
+.background-color-orange
+{
+    background-color: orange;
+}
+
+.background-color-purple
+{
+    background-color: purple;
+}
+
+.background-color-lime
+{
+    background-color: lime;
+}
+

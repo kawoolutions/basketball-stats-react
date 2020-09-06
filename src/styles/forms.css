@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/******************************* proportional styles ***************************/
+
+/* widthentages for one sixth, one third, etc. */
+
+.col-2
+{
+    width: 50% !important;
+}
+
+.col-3
+{
+    width: 33.333% !important;
+}
+
+.col-4
+{
+    width: 25% !important;
+}
+
+.col-5
+{
+    width: 20% !important;
+}
+
+.col-6
+{
+    width: 16.667% !important;
+}
+
+/********************************** label styles ******************************/
+
+.label
+{
+    font-weight: bold;
+    text-align: right;
+}
+
+/* bold + width percentage */
+
+.label-10
+{
+    font-weight: bold;
+    width: 10%;
+    text-align: right;
+}
+
+.label-15
+{
+    font-weight: bold;
+    width: 15%;
+    text-align: right;
+}
+
+.label-20
+{
+    font-weight: bold;
+    width: 20%;
+    text-align: right;
+}
+
+.label-25
+{
+    font-weight: bold;
+    width: 25%;
+    text-align: right;
+}
+
+.label-30
+{
+    font-weight: bold;
+    width: 30%;
+    text-align: right;
+}
+
+.label-33
+{
+    font-weight: bold;
+    width: 33.333%;
+    text-align: right;
+}
+
+.label-35
+{
+    font-weight: bold;
+    width: 35%;
+    text-align: right;
+}
+
+.label-40
+{
+    font-weight: bold;
+    width: 40%;
+    text-align: right;
+}
+
+.label-50
+{
+    font-weight: bold;
+    width: 50%;
+    text-align: right;
+}
+
+/* bold + pixel width */
+
+.label-20px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 20px;
+}
+
+.label-30px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 30px;
+}
+
+.label-40px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 40px;
+}
+
+.label-50px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 50px;
+}
+
+.label-60px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 60px;
+}
+
+.label-70px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 70px;
+}
+
+.label-80px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 80px;
+}
+
+.label-90px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 90px;
+}
+
+.label-100px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 100px;
+}
+
+.label-110px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 110px;
+}
+
+.label-120px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 120px;
+}
+
+.label-130px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 130px;
+}
+
+.label-140px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+}
+
+.label-150px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 150px;
+}
+
+.label-160px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 160px;
+}
+
+.label-170px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 170px;
+}
+
+.label-180px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 180px;
+}
+
+.label-190px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 190px;
+}
+
+.label-200px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 200px;
+}
+
+.label-220px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 220px;
+}
+
+.label-240px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 240px;
+}
+
+.label-260px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 260px;
+}
+
+.label-280px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 280px;
+}
+
+.label-300px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 300px;
+}
+
+.label-350px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 350px;
+}
+
+.label-400px
+{
+    font-weight: bold;
+    text-align: right;
+    width: 400px;
+}
+
+.ml-5px
+{
+    margin-left: 5px;
+}
+
+.ml-10px
+{
+    margin-left: 10px;
+}
+
+.ml-15px
+{
+    margin-left: 15px;
+}
+
+.ml-20px
+{
+    margin-left: 20px;
+}
+
+.ml-25px
+{
+    margin-left: 25px;
+}
+
+.ml-30px
+{
+    margin-left: 30px;
+}
