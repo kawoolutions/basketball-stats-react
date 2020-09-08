@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PersonManager from './PersonManager';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import './styles/borders.css';
+// import './styles/colors.css';
+// import './styles/fonts.css';
+// import './styles/forms.css';
+// import './styles/heights.css';
+// import './styles/margins.css';
+// import './styles/misc.css';
+// import './styles/paddings.css';
+// import './styles/text.css';
+// import './styles/widths.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// ReactDOM.render(<p>Hello world using PrimeReact!!!</p>, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<PersonManager />, document.getElementById('root'));
