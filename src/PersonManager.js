@@ -23,7 +23,7 @@ class PersonManager extends Component
 
     componentDidMount()
     {
-        const url = 'http://localhost:8080/bbstats/ws/person/findall';
+        const url = 'http://kawoolutions.com/bbstats/ws/person/findall';
         
         fetch(url)
             .then(response => response.json())
@@ -142,7 +142,7 @@ class PersonManager extends Component
                     {coach ? ( <span title="Coach" role="img" aria-label="P">👨‍💼</span> ) : ( "" )}
                     {
                         referee ? (
-                            <img src="http://localhost:8080/bbstats/javax.faces.resource/images/icons/referee-border.png.xhtml?ln=bbstats" title="Referee" alt="" width="16" style={{verticalAlign: -2.5, marginLeft: 3}} />
+                            <img src="http://kawoolutions.com/bbstats/javax.faces.resource/images/icons/referee-border.png.xhtml?ln=bbstats" title="Referee" alt="" width="16" style={{verticalAlign: -2.5, marginLeft: 3}} />
                         ) : (
                             <></>
                         )
