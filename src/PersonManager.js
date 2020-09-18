@@ -235,7 +235,7 @@ class PersonManager extends Component
                             tooltip="Edit"
                             className="p-button-sm p-button-raised p-button-rounded p-button-outlined" />
                     <Button icon="pi pi-trash"
-                            tooltip="Edit"
+                            tooltip="Remove"
                             className="p-button-sm p-button-raised p-button-rounded p-button-outlined"
                             style={{marginLeft: 5}} />
                 </div>
