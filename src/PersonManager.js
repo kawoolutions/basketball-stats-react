@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
+import { Toast } from 'primereact/toast';
 
 import Flag from 'react-world-flags';
 
@@ -18,7 +19,11 @@ class PersonManager extends Component
     {
         super();
 
-        this.state = {entities: []};
+        this.state = {entities: [],
+                      selectedEntity: null};
+        
+        this.onRowSelect = this.onRowSelect.bind(this);
+        this.onRowUnselect = this.onRowUnselect.bind(this);
     }
 
     componentDidMount()
@@ -34,15 +39,33 @@ class PersonManager extends Component
             })
             .catch(console.log)
     }
+
+    onRowSelect(event)
+    {
+        this.toast.show({ severity: 'info', summary: 'Person Selected', detail: 'Name: ' + event.data.lastName, life: 3000 });
+    }
+
+    onRowUnselect(event)
+    {
+        this.toast.show({ severity: 'warn', summary: 'Person Unselected', detail: 'Name: ' + event.data.lastName, life: 3000 });
+    }
     
     render()
     {
         var header = "Person Manager (" + this.state.entities.length + ")"
         return (
             <div style={{ maxWidth: 1800, marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10 }}>
+                
+                <Toast ref={(el) => this.toast = el} />
+                
                 <DataTable value={this.state.entities}
                            header={header}
                            dataKey="id"
+                           selection={this.state.selectedEntity}
+                           selectionMode="single"
+                           onSelectionChange={e => this.setState({ selectedEntity: e.value })}
+                           onRowSelect={this.onRowSelect}
+                           onRowUnselect={this.onRowUnselect} 
                            sortField='lastName'
                            sortOrder={1}
                            resizableColumns
