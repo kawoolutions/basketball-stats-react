@@ -144,24 +144,12 @@ class PersonManager extends Component
 
     onRowEdit(rowData)
     {
-        this.setState({selectedEntity: rowData});
-        this.setState({mode: modes.EDIT});
-
-        // this.edit();
-
-        console.log("Last name: " + rowData.lastName);
-        console.log("Mode: " + this.state.mode);
-
-        this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + rowData.lastName + ", " + this.state.mode, life: 3000 });
+        this.setState({selectedEntity: rowData, mode: modes.EDIT}, () => this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
     }
 
     onRowRemove(rowData)
     {
-        this.setState({selectedEntity: rowData});
-        this.setState({mode: modes.REMOVE});
-        // this.remove();
-
-        this.toast.show({ severity: 'info', summary: 'Removing Person', detail: 'Name: ' + rowData.lastName + ", " + this.state.mode, life: 3000 });
+        this.setState({selectedEntity: rowData, mode: modes.REMOVE}, () => this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
     }
 
     onRowSelect(event)
