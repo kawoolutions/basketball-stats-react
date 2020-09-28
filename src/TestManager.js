@@ -93,6 +93,8 @@ class TestManager extends Component
         
         this.onRowEdit = this.onRowEdit.bind(this);
         this.onRowRemove = this.onRowRemove.bind(this);
+        this.onRowSelect = this.onRowSelect.bind(this);
+        this.onRowUnselect = this.onRowUnselect.bind(this);
         
         this.actions = this.actions.bind(this);
     }
@@ -111,6 +113,9 @@ class TestManager extends Component
                            dataKey="id"
                            selection={this.state.selectedEntity}
                            selectionMode="single"
+                           onSelectionChange={e => this.setState({ selectedEntity: e.value })}
+                           onRowSelect={this.onRowSelect}
+                           onRowUnselect={this.onRowUnselect}
                            sortField='lastName'
                            sortOrder={1}
                            resizableColumns
@@ -150,29 +155,24 @@ class TestManager extends Component
 
     onRowEdit(rowData)
     {
-        // this.setState({selectedEntity: rowData});
-        // this.setState({mode: modes.EDIT});
-        // this.setState( (selectedEntity) =>  selectedEntity = rowData);
-        // this.setState( (mode) =>  mode = modes.EDIT);
-        // this.edit();
-
         this.setState({selectedEntity: rowData, mode: modes.EDIT}, () => this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
-
-        // console.log("Last name: " + this.state.selectedEntity.lastName);
-        // console.log("Mode: " + this.state.mode);
-
-        // this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 });
     }
 
     onRowRemove(rowData)
     {
-        // this.setState({selectedEntity: rowData});
-        // this.setState({mode: modes.REMOVE});
-        // this.remove();
-
-        // this.toast.show({ severity: 'info', summary: 'Removing Person', detail: 'Name: ' + rowData.lastName + ", " + this.state.mode, life: 3000 });
-
         this.setState({selectedEntity: rowData, mode: modes.REMOVE}, () => this.toast.show({ severity: 'info', summary: 'Removing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
+    }
+
+    onRowSelect(event)
+    {
+        this.setState({selectedEntity: event.data, mode: modes.VIEW}, () => this.toast.show({ severity: 'info', summary: 'Viewing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
+    }
+
+    onRowUnselect(event)
+    {
+        let previousMode = this.state.mode;
+
+        this.setState({selectedEntity: null, mode: null}, () => this.toast.show({ severity: 'info', summary: 'Unselecting Person', detail: 'Name: ' + event.data.lastName + ", PREV: " + previousMode, life: 3000 }))
     }
 
     view()

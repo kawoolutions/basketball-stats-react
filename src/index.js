@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import PersonManager from './PersonManager';
-// import TestManager from './TestManager';
+// import PersonManager from './PersonManager';
+import TestManager from './TestManager';
 
 import './index.css';
 // import './styles/borders.css';
@@ -16,9 +16,5 @@ import './index.css';
 // import './styles/text.css';
 // import './styles/widths.css';
 
-// console.log(packageJson.version);
-
-// ReactDOM.render(<p>Hello world using PrimeReact!!!</p>, document.getElementById('root'));
-// ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<PersonManager />, document.getElementById('root'));
-// ReactDOM.render(<TestManager />, document.getElementById('root'));
+// ReactDOM.render(<PersonManager />, document.getElementById('root'));
+ReactDOM.render(<TestManager />, document.getElementById('root'));

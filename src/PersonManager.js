@@ -45,10 +45,10 @@ class PersonManager extends Component
                       selectedEntity: null,
                       mode: null};
         
-        // this.onRowSelect = this.onRowSelect.bind(this);
-        // this.onRowUnselect = this.onRowUnselect.bind(this);
         this.onRowEdit = this.onRowEdit.bind(this);
         this.onRowRemove = this.onRowRemove.bind(this);
+        this.onRowSelect = this.onRowSelect.bind(this);
+        this.onRowUnselect = this.onRowUnselect.bind(this);
         
         // templates
         this.actionsTemplate = this.actionsTemplate.bind(this);
@@ -64,10 +64,10 @@ class PersonManager extends Component
                 
                 <div>BBStats version: {APP_VERSION}</div>
                 <div>React version: {REACT_VERSION}</div>
-                <div>React DOM version: {REACT_DOM_VERSION}</div>
+                {/* <div>React DOM version: {REACT_DOM_VERSION}</div> */}
                 <div>PrimeReact version: {PRIME_REACT_VERSION}</div>
-                <div>PrimeIcons version: {PRIME_ICONS_VERSION}</div>
-                <div>World Flags version: {WORLD_FLAGS_VERSION}</div>
+                {/* <div>PrimeIcons version: {PRIME_ICONS_VERSION}</div> */}
+                {/* <div>World Flags version: {WORLD_FLAGS_VERSION}</div> */}
                 <br />
 
                 <DataTable value={this.state.entities}
@@ -76,8 +76,8 @@ class PersonManager extends Component
                            selection={this.state.selectedEntity}
                            selectionMode="single"
                            onSelectionChange={e => this.setState({ selectedEntity: e.value })}
-                        //    onRowSelect={this.onRowSelect}
-                        //    onRowUnselect={this.onRowUnselect}
+                           onRowSelect={this.onRowSelect}
+                           onRowUnselect={this.onRowUnselect}
                            sortField='lastName'
                            sortOrder={1}
                            resizableColumns
@@ -149,17 +149,19 @@ class PersonManager extends Component
 
     onRowRemove(rowData)
     {
-        this.setState({selectedEntity: rowData, mode: modes.REMOVE}, () => this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
+        this.setState({selectedEntity: rowData, mode: modes.REMOVE}, () => this.toast.show({ severity: 'info', summary: 'Removing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
     }
 
     onRowSelect(event)
     {
-        this.toast.show({ severity: 'info', summary: 'Selecting Person', detail: 'Name: ' + event.data.lastName, life: 3000 });
+        this.setState({selectedEntity: event.data, mode: modes.VIEW}, () => this.toast.show({ severity: 'info', summary: 'Viewing Person', detail: 'Name: ' + this.state.selectedEntity.lastName + ", " + this.state.mode, life: 3000 }))
     }
 
     onRowUnselect(event)
     {
-        this.toast.show({ severity: 'warn', summary: 'Unselecting Person', detail: 'Name: ' + event.data.lastName, life: 3000 });
+        let previousMode = this.state.mode;
+
+        this.setState({selectedEntity: null, mode: null}, () => this.toast.show({ severity: 'info', summary: 'Unselecting Person', detail: 'Name: ' + event.data.lastName + ", PREV: " + previousMode, life: 3000 }))
     }
 
     view()
