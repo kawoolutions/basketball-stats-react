@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// import { packageJson } from '../package.json';
+
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
@@ -13,6 +15,26 @@ import 'primeicons/primeicons.css';
 
 import './manager.css';
 
+const packageJson = require('../package.json');
+
+// console.log("PJ\n" + JSON.stringify(packageJson));
+
+const APP_VERSION = packageJson.version;
+const REACT_VERSION = React.version;
+const REACT_DOM_VERSION = packageJson.dependencies["react-dom"].substring(1);
+const PRIME_REACT_VERSION = packageJson.dependencies.primereact.substring(1);
+const PRIME_ICONS_VERSION = packageJson.dependencies.primeicons.substring(1);
+const WORLD_FLAGS_VERSION = packageJson.dependencies['react-world-flags'].substring(1);
+
+
+const modes =
+{
+    VIEW:   'VIEW',
+    ADD:    'ADD',
+    EDIT:   'EDIT',
+    REMOVE: 'REMOVE'
+}
+
 class PersonManager extends Component
 {
     constructor()
@@ -20,34 +42,16 @@ class PersonManager extends Component
         super();
 
         this.state = {entities: [],
-                      selectedEntity: null};
+                      selectedEntity: null,
+                      mode: null};
         
-        this.onRowSelect = this.onRowSelect.bind(this);
-        this.onRowUnselect = this.onRowUnselect.bind(this);
-    }
-
-    componentDidMount()
-    {
-        const url = 'http://kawoolutions.com/bbstats/ws/person/findall';
+        // this.onRowSelect = this.onRowSelect.bind(this);
+        // this.onRowUnselect = this.onRowUnselect.bind(this);
+        this.onRowEdit = this.onRowEdit.bind(this);
+        this.onRowRemove = this.onRowRemove.bind(this);
         
-        fetch(url)
-            .then(response => response.json())
-            .then(data =>
-            {
-                this.setState({entities: data});
-                console.log('This is your data', data);
-            })
-            .catch(console.log)
-    }
-
-    onRowSelect(event)
-    {
-        this.toast.show({ severity: 'info', summary: 'Person Selected', detail: 'Name: ' + event.data.lastName, life: 3000 });
-    }
-
-    onRowUnselect(event)
-    {
-        this.toast.show({ severity: 'warn', summary: 'Person Unselected', detail: 'Name: ' + event.data.lastName, life: 3000 });
+        // templates
+        this.actionsTemplate = this.actionsTemplate.bind(this);
     }
     
     render()
@@ -58,14 +62,22 @@ class PersonManager extends Component
                 
                 <Toast ref={(el) => this.toast = el} />
                 
+                <div>BBStats version: {APP_VERSION}</div>
+                <div>React version: {REACT_VERSION}</div>
+                <div>React DOM version: {REACT_DOM_VERSION}</div>
+                <div>PrimeReact version: {PRIME_REACT_VERSION}</div>
+                <div>PrimeIcons version: {PRIME_ICONS_VERSION}</div>
+                <div>World Flags version: {WORLD_FLAGS_VERSION}</div>
+                <br />
+
                 <DataTable value={this.state.entities}
                            header={header}
                            dataKey="id"
                            selection={this.state.selectedEntity}
                            selectionMode="single"
                            onSelectionChange={e => this.setState({ selectedEntity: e.value })}
-                           onRowSelect={this.onRowSelect}
-                           onRowUnselect={this.onRowUnselect} 
+                        //    onRowSelect={this.onRowSelect}
+                        //    onRowUnselect={this.onRowUnselect}
                            sortField='lastName'
                            sortOrder={1}
                            resizableColumns
@@ -88,10 +100,103 @@ class PersonManager extends Component
                     <Column field='birthDate' header='Date of Birth' body={this.formattedBirthDate} sortable style={{width:'10%'}} />
                     <Column field='emailAddresses' header='E-Mail Address' body={this.firstEmailAddress} sortable style={{width:'10%'}} />
                     <Column field='phoneNumbers' header='Mobile Number' body={this.mobilePhoneNumber} sortable style={{width:'10%'}} />
-                    <Column field="actions" body={this.actions} style={{width:'7.5%'}} />
+                    <Column field="actions" body={this.actionsTemplate} style={{width:'7.5%'}} />
                 </DataTable>
             </div>
         );
+    }
+
+    // Called *after* render()
+    componentDidMount()
+    {
+        const url = 'http://kawoolutions.com/bbstats/ws/person/findall';
+        
+        fetch(url)
+            .then(response => response.json())
+            .then(data =>
+            {
+                this.setState({entities: data});
+            })
+            .catch(console.log)
+    }
+
+    actionsTemplate(rowData)
+    {
+        // var index = this.state.entities.indexOf( rowData );
+
+        return (
+            <>
+                <div style={{textAlign: "center"}}>
+                    {/* {index} */}
+                    <Button icon="pi pi-pencil"
+                            tooltip="Edit"
+                            onClick={() => this.onRowEdit(rowData)}
+                            className="p-button-sm p-button-raised p-button-rounded p-button-outlined" />
+                    <Button icon="pi pi-trash"
+                            tooltip="Remove"
+                            className="p-button-sm p-button-raised p-button-rounded p-button-outlined"
+                            onClick={() => this.onRowRemove(rowData)}
+                            style={{marginLeft: 5}} />
+                </div>
+            </>
+        );
+    }
+
+    onRowEdit(rowData)
+    {
+        this.setState({selectedEntity: rowData});
+        this.setState({mode: modes.EDIT});
+
+        // this.edit();
+
+        console.log("Last name: " + rowData.lastName);
+        console.log("Mode: " + this.state.mode);
+
+        this.toast.show({ severity: 'info', summary: 'Editing Person', detail: 'Name: ' + rowData.lastName + ", " + this.state.mode, life: 3000 });
+    }
+
+    onRowRemove(rowData)
+    {
+        this.setState({selectedEntity: rowData});
+        this.setState({mode: modes.REMOVE});
+        // this.remove();
+
+        this.toast.show({ severity: 'info', summary: 'Removing Person', detail: 'Name: ' + rowData.lastName + ", " + this.state.mode, life: 3000 });
+    }
+
+    onRowSelect(event)
+    {
+        this.toast.show({ severity: 'info', summary: 'Selecting Person', detail: 'Name: ' + event.data.lastName, life: 3000 });
+    }
+
+    onRowUnselect(event)
+    {
+        this.toast.show({ severity: 'warn', summary: 'Unselecting Person', detail: 'Name: ' + event.data.lastName, life: 3000 });
+    }
+
+    view()
+    {
+        this.setState({mode: modes.VIEW});
+    }
+
+    add()
+    {
+        this.setState({mode: modes.ADD});
+    }
+
+    edit()
+    {
+        this.setState({mode: modes.EDIT});
+    }
+
+    remove()
+    {
+        this.setState({mode: modes.REMOVE});
+    }
+
+    clear()
+    {
+        this.setState({mode: null});
     }
     
     salutation(rowData)
@@ -244,26 +349,6 @@ class PersonManager extends Component
 
         // return null;
         return rowData['id'];
-    }
-
-    actions(rowData)
-    {
-        // var index = this.state.entities.indexOf( rowData );
-
-        return (
-            <>
-                <div style={{textAlign: "center"}}>
-                    {/* {index} */}
-                    <Button icon="pi pi-save"
-                            tooltip="Edit"
-                            className="p-button-sm p-button-raised p-button-rounded p-button-outlined" />
-                    <Button icon="pi pi-trash"
-                            tooltip="Remove"
-                            className="p-button-sm p-button-raised p-button-rounded p-button-outlined"
-                            style={{marginLeft: 5}} />
-                </div>
-            </>
-        );
     }
 }
 
