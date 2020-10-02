@@ -6,7 +6,7 @@ import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 
 import 'primereact/resources/themes/luna-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
+import 'primereact/resources/primereact.css';
 import 'primeicons/primeicons.css';
 
 
@@ -32,7 +32,7 @@ class TestManager extends Component
                 "streetName": "",
                 "houseNbr": "",
                 "firstName": "Ahmed",
-                "lastName": "Al-Thiab",
+                "lastName": "Al-Zadeh",
                 "gender": "MALE",
             },
             {
@@ -41,8 +41,8 @@ class TestManager extends Component
                 "cityName": "",
                 "streetName": "",
                 "houseNbr": "",
-                "firstName": "Stefan",
-                "lastName": "Antalovics",
+                "firstName": "Stephan",
+                "lastName": "Lolovitsch",
                 "gender": "MALE",
             },
             {
@@ -51,8 +51,8 @@ class TestManager extends Component
                 "cityName": "",
                 "streetName": "",
                 "houseNbr": "",
-                "firstName": "Christian",
-                "lastName": "Attina",
+                "firstName": "Chris",
+                "lastName": "Altona",
                 "gender": "MALE",
             },
             {
@@ -61,8 +61,8 @@ class TestManager extends Component
                 "cityName": "",
                 "streetName": "",
                 "houseNbr": "",
-                "firstName": "Filmon",
-                "lastName": "Berhane",
+                "firstName": "Jose",
+                "lastName": "Berhanney",
                 "gender": "MALE",
             },
             {
@@ -71,8 +71,8 @@ class TestManager extends Component
                 "cityName": "Darmstadt",
                 "streetName": "",
                 "houseNbr": "",
-                "firstName": "Johannes",
-                "lastName": "Loczewski",
+                "firstName": "Joe",
+                "lastName": "Locktschi",
                 "gender": "MALE",
             },
             {
@@ -81,8 +81,8 @@ class TestManager extends Component
                 "cityName": "Wedel",
                 "streetName": "Rosengarten",
                 "houseNbr": "6",
-                "firstName": "Karsten",
-                "lastName": "Wutzke",
+                "firstName": "Kasimir",
+                "lastName": "Woodruff",
                 "gender": "MALE",
             }
         ]
