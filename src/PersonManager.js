@@ -269,9 +269,11 @@ class PersonManager extends Component
     // Called *after* render()
     componentDidMount()
     {
-        const entityUrl = 'http://kawoolutions.com/bbstats/ws/person/findall';
+        // const domain = "3.79.245.148";
+        const domain = "localhost";
+        const allPersonsUrl = "http://" + domain + ":8080/bbstats/ws/person/findall";
         
-        fetch(entityUrl)
+        fetch(allPersonsUrl)
             .then(response => response.json())
             .then(data =>
             {
@@ -283,7 +285,7 @@ class PersonManager extends Component
         this.genders = [{ "gender": "MALE", "name": "Mr" }, { "gender": "FEMALE", "name": "Mrs" }];
 
         // all countries
-        const allCountriesUrl = 'http://kawoolutions.com/bbstats/ws/country/findall';
+        const allCountriesUrl = "http://" + domain + "/bbstats/ws/country/findall";
         
         fetch(allCountriesUrl)
             .then(response => response.json())
@@ -294,7 +296,7 @@ class PersonManager extends Component
             .catch(console.log)
         
         // default countries
-        const defaultCountryUrl = 'http://kawoolutions.com/bbstats/ws/country/finddefault';
+        const defaultCountryUrl = "http://" + domain + "/bbstats/ws/country/finddefault";
         
         fetch(defaultCountryUrl)
             .then(response => response.json())
