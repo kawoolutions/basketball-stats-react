@@ -72,7 +72,7 @@ class PersonManager extends Component
                 
                 <Toast ref={(el) => this.toast = el} />
                 
-                <div>BBStats (R) version: {APP_VERSION}</div>
+                <div>Application version: {APP_VERSION}</div>
                 <div>React version: {REACT_VERSION}</div>
                 {/* <div>React DOM version: {REACT_DOM_VERSION}</div> */}
                 <div>PrimeReact version: {PRIME_REACT_VERSION}</div>
