@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import PersonManager from './PersonManager';
 // import TestManager from './TestManager';
@@ -17,5 +16,6 @@ import './styles/widths.css';
 
 import 'primeflex/primeflex.css';
 
-ReactDOM.render(<PersonManager />, document.getElementById('root'));
-// ReactDOM.render(<TestManager />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<PersonManager />);
