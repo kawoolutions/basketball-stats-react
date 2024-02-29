@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
-import PersonManager from './PersonManager';
+import PersonManager from './components/PersonManager';
 // import TestManager from './TestManager';
 
 import './index.css';
