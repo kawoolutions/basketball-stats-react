@@ -28,17 +28,14 @@ const APP_VERSION = packageJson.version;
 const REACT_VERSION = React.version;
 // const REACT_DOM_VERSION = packageJson.dependencies["react-dom"].substring(1);
 const PRIME_REACT_VERSION = packageJson.dependencies.primereact.substring(1);
-// const PRIME_ICONS_VERSION = packageJson.dependencies.primeicons.substring(1);
-// const WORLD_FLAGS_VERSION = packageJson.dependencies['react-world-flags'].substring(1);
 
 
-const modes =
-    {
-        VIEW: 'VIEW',
-        ADD: 'ADD',
-        EDIT: 'EDIT',
-        REMOVE: 'REMOVE'
-    }
+const modes = {
+    VIEW: 'VIEW',
+    ADD: 'ADD',
+    EDIT: 'EDIT',
+    REMOVE: 'REMOVE'
+}
 
 class PersonManager extends Component {
     constructor() {
