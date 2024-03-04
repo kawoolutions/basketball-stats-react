@@ -292,8 +292,8 @@ class PersonManager extends Component {
 
     // Called *after* render()
     componentDidMount() {
-        // const domainPort = "3.79.245.148:8080";
-        const domainPort = "localhost:8080";
+        const domainPort = "3.79.245.148:8080";
+        // const domainPort = "localhost:8080";
         const allPersonsUrl = "http://" + domainPort + "/bbstats/ws/person/findall";
 
         fetch(allPersonsUrl)
