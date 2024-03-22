@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-// import { packageJson } from '../package.json';
-
 import {DataTable} from 'primereact/datatable';
 import {Column} from 'primereact/column';
 import {Panel} from 'primereact/panel';
@@ -19,8 +17,6 @@ import 'primereact/resources/primereact.css';
 import 'primeicons/primeicons.css';
 
 import './manager.css';
-
-
 
 
 const modes = {
