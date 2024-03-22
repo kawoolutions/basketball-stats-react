@@ -74,7 +74,9 @@ function Header() {
                 </div>
             </div>
             <div id="menu-right" className="">
-                LOGIN/LOGOUT
+                <NavLink to="/login" className="menu-link">
+                    Login
+                </NavLink>
             </div>
         </header>
     );

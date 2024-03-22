@@ -129,3 +129,16 @@ footer a:hover {
     color: #DD7700;
 }
 
+
+.p-panel-content .row {
+    margin: 10px;
+}
+
+.p-panel-content .label {
+    margin-bottom: 5px;
+}
+
+.p-panel-content .p-inputtext,
+.p-panel-content .p-password {
+    width: 100%;
+}
