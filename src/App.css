@@ -15,3 +15,117 @@
     font-size: calc(10px + 2vmin);
     color: white;
 } */
+
+:root {
+    --coal-black: #393939;
+    --street-gray: #666666;
+    --concrete-gray: #afafaf;
+    --paper-white: #f7f7f7;
+    --berry-red: #ef0727;
+    --apple-green: #77b727;
+}
+
+/* https://aykevl.nl/2014/09/fix-jumping-scrollbar */
+@media screen and (min-width: 1920px) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+
+    header {
+        margin-left: calc((100vw - 100%) * -0.5);
+        margin-right: 0;
+    }
+}
+
+header {
+    color: var(--street-gray);
+    background-color: var(--paper-white);
+}
+
+/* https://ishadeed.com/article/website-headers-flexbox/ */
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-title-left {
+}
+
+#menu-right {
+}
+
+.company-logo {
+    margin: 15px 10px 5px 20px;
+}
+
+.project-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.menu-link {
+    text-decoration: none;
+
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 5px;
+
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    white-space: nowrap;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+}
+
+.menu-link:hover {
+    color: #DD7700;
+}
+
+/*#menu-form\:admin-menu .menu-link {
+    margin-left: 5px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+span.menu-link {
+    color: silver;
+}*/
+
+#menu-right .menu-link {
+    color: #494949;
+}
+
+#menu-right .menu-link:hover {
+    color: #DD7700;
+}
+
+footer {
+    background-color: var(--coal-black);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--paper-white);
+    letter-spacing: 0.05rem;
+}
+
+footer p:nth-child(2),
+footer p:nth-child(3) {
+    color: var(--concrete-gray);
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:link {
+    color: var(--concrete-gray);
+}
+
+footer a:hover {
+    color: #DD7700;
+}
+

@@ -1,110 +1,57 @@
-import "./index.css";
-
+import { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Link, Outlet, RouterProvider, useParams, useRouteError } from "react-router-dom";
 
 import App from "./App.tsx";
-import { useState } from "react";
+import Paras from "./Utils.tsx";
 
+import "./index.css";
 
 function Home() {
     return (
         <div>
-            <h1>Home</h1>
-            <p>Send us a message!</p>
+            <h2>Home</h2>
+            <Paras></Paras>
         </div>
     );
 }
 
-function Blog() {
+function Competitions() {
     return (
         <div>
-            <h1>Blog</h1>
-            <p>Read our latest posts or <Link to="add">add a new post</Link>.</p>
-            <ul>
-                <li><Link to="1">Post 1</Link></li>
-                <li><Link to="2">Post 2</Link></li>
-                <li><Link to="3">Post 3</Link></li>
-                <li><Link to="4">Post 4</Link></li>
-                <li><Link to="5">Post 5</Link></li>
-            </ul>
-            <Outlet></Outlet>
+            <h2>Competitions</h2>
         </div>
     );
 }
 
-function Post() {
-    const {id} = useParams();
+function Teams() {
     return (
         <div>
-            <h1>Post</h1>
-            <p>Read our latest posting {id}!</p>
+            <h2>Teams</h2>
         </div>
     );
 }
 
-function AddPost() {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
-    const errorTitle = validateTitle();
-    const errorContent = validateContent();
-
-    function validateTitle() {
-        return title.length < 5 ? "Title must be at least 5 characters!" : "";
-    }
-
-    function validateContent() {
-        return content.length < 10 ? "Content must be at least 10 characters!" : "";
-    }
-
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-        event.preventDefault();
-        console.log("Adding post: ", {title, content});
-    }
-
+function Players() {
     return (
         <div>
-            <h1>Add Post</h1>
-            <p>Add a new post!</p>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Title:
-                    <br />
-                    <input type="text" value={title} onChange={e => setTitle(e.target.value)}/>
-                    ({title})
-                </label>
-                <br />
-                <label>
-                    Content:
-                    <br />
-                    <textarea value={content} onChange={e => setContent(e.target.value)}/>
-                    ({content})
-                </label>
-
-                {errorTitle && <p>{errorTitle}</p>}
-                {errorContent && <p>{errorContent}</p>}
-
-                <br />
-                <button type="submit" disabled={!!(errorTitle || errorContent)}>Submit</button>
-            </form>
+            <h2>Players</h2>
         </div>
     );
 }
 
-function Contact() {
+function Arenas() {
     return (
         <div>
-            <h1>Contact</h1>
-            <p>Send us a message!</p>
+            <h2>Arenas</h2>
         </div>
     );
 }
 
-function About() {
+function Admin() {
     return (
         <div>
-            <h1>About</h1>
-            <p>Learn more about us!</p>
+            <h2>Admin</h2>
         </div>
     );
 }
@@ -114,7 +61,7 @@ function NotFound() {
     console.log("Error: ", error)
     return (
         <div>
-            <h1>Not Found</h1>
+            <h2>Not Found</h2>
             <p>Sorry, that page doesn't exist!</p>
             <p>Error: {error.statusText || error.message}</p>
         </div>
@@ -132,26 +79,25 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "/blog",
-                element: <Blog />,
-                children: [
-                    {
-                        path: ":id",
-                        element: <Post />
-                    },
-                    {
-                        path: "add",
-                        element: <AddPost />
-                    }
-                ]
+                path: "/competitions",
+                element: <Competitions />,
+                children: []
             },
             {
-                path: "/contact",
-                element: <Contact />
+                path: "/teams",
+                element: <Teams />
             },
             {
-                path: "/about",
-                element: <About />
+                path: "/players",
+                element: <Players />
+            },
+            {
+                path: "/arenas",
+                element: <Arenas />
+            },
+            {
+                path: "/admin",
+                element: <Admin />
             },
         ]
     },
