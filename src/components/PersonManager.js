@@ -18,16 +18,9 @@ import 'primereact/resources/themes/luna-blue/theme.css';
 import 'primereact/resources/primereact.css';
 import 'primeicons/primeicons.css';
 
-import '../manager.css';
+import './manager.css';
 
-const packageJson = require('../../package.json');
 
-// console.log("PJ\n" + JSON.stringify(packageJson));
-
-const APP_VERSION = packageJson.version;
-const REACT_VERSION = React.version;
-// const REACT_DOM_VERSION = packageJson.dependencies["react-dom"].substring(1);
-const PRIME_REACT_VERSION = packageJson.dependencies.primereact.substring(1);
 
 
 const modes = {
