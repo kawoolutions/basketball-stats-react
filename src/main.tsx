@@ -4,6 +4,7 @@ import { createBrowserRouter, Link, Outlet, RouterProvider, useParams, useRouteE
 
 import App from "./App.tsx";
 import Paras from "./Utils.tsx";
+import "./i18n/config.ts";
 
 import "./index.css";
 import { Panel } from "primereact/panel";
