@@ -1,13 +1,15 @@
-import { NavLink, Outlet } from "react-router-dom";
-
-import "./App.css"
 import React, { ReactNode } from "react";
-import * as packageJson from "../package.json"
+import { NavLink, Outlet } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
-import 'primereact/resources/themes/luna-blue/theme.css';
-import 'primeicons/primeicons.css';
 import { Panel } from "primereact/panel";
 
+import LocaleSwitcher from "./i18n/LocaleSwitcher.tsx";
+import * as packageJson from "../package.json";
+
+import "primereact/resources/themes/luna-blue/theme.css";
+import "primeicons/primeicons.css";
+import "./App.css";
 
 export default function App() {
     return (
@@ -18,6 +20,7 @@ export default function App() {
 }
 
 function Layout({ children }: { children: ReactNode }) {
+    const { t } = useTranslation();
     return (
         <>
             <Header></Header>
@@ -32,22 +35,22 @@ function Layout({ children }: { children: ReactNode }) {
             >
                 <Panel>
                     <NavLink to="/" className="menu-link">
-                        Home
+                        {t("common.homePage.shortLabel")}
                     </NavLink>
                     <NavLink to="/competitions" className="menu-link">
-                        Competitions
+                        {t("entity.competition.plural.label")}
                     </NavLink>
                     <NavLink to="/teams" className="menu-link">
-                        Teams
+                        {t("entity.team.plural.label")}
                     </NavLink>
                     <NavLink to="/players" className="menu-link">
-                        Players
+                        {t("entity.player.plural.label")}
                     </NavLink>
                     <NavLink to="/arenas" className="menu-link">
-                        Arenas
+                        {t("entity.arena.plural.label")}
                     </NavLink>
                     <NavLink to="/admin" className="menu-link">
-                        Admin
+                        {t("common.admin.label")}
                     </NavLink>
                 </Panel>
             </nav>
@@ -60,6 +63,7 @@ function Layout({ children }: { children: ReactNode }) {
 }
 
 function Header() {
+    const { t } = useTranslation();
     return (
         <header className="flex-header">
             <div id="logo-title-left">
@@ -74,8 +78,9 @@ function Header() {
                 </div>
             </div>
             <div id="menu-right" className="">
+                <LocaleSwitcher></LocaleSwitcher>
                 <NavLink to="/login" className="menu-link">
-                    Login
+                    {t("common.login.label")}
                 </NavLink>
             </div>
         </header>

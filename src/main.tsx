@@ -1,67 +1,77 @@
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, Link, Outlet, RouterProvider, useParams, useRouteError } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useRouteError } from "react-router-dom";
 
 import App from "./App.tsx";
 import Paras from "./Utils.tsx";
+
 import "./i18n/config.ts";
 
-import "./index.css";
 import { Panel } from "primereact/panel";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { Password } from "primereact/password";
 
+import "./index.css";
+import {useTranslation} from "react-i18next";
+
 function Home() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Home</h2>
+            <h2>{t("common.homePage.shortLabel")}</h2>
             <Paras></Paras>
         </div>
     );
 }
 
 function Competitions() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Competitions</h2>
+            <h2>{t("entity.competition.plural.heading")}</h2>
         </div>
     );
 }
 
 function Teams() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Teams</h2>
+            <h2>{t("entity.team.plural.heading")}</h2>
         </div>
     );
 }
 
 function Players() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Players</h2>
+            <h2>{t("entity.player.plural.heading")}</h2>
         </div>
     );
 }
 
 function Arenas() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Arenas</h2>
+            <h2>{t("entity.arena.plural.heading")}</h2>
         </div>
     );
 }
 
 function Admin() {
+    const { t } = useTranslation();
     return (
         <div>
-            <h2>Admin</h2>
+            <h2>{t("common.admin.heading")}</h2>
         </div>
     );
 }
 
 function Login() {
+    const { t } = useTranslation();
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     return (
@@ -69,17 +79,17 @@ function Login() {
             <Panel header="Login" style={{ width: "400px", margin: "50px auto" }}>
                 <div className="row">
                     <div className="column label">
-                        User name:
+                        {t("entity.user.name.label")}
                     </div>
                     <div className="column">
                         <InputText value={userName}
                                    onChange={(e) => setUserName(e.target.value)}
-                                   placeholder="Enter user name"/>
+                                   placeholder={t("entity.user.name.label")}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="column label">
-                        Password:
+                        {t("entity.user.password.label")}
                     </div>
                     <div className="column">
                         <Password value={password}
@@ -88,10 +98,10 @@ function Login() {
                     </div>
                 </div>
                 <div className="row">
-                    Hint: test // test ⚠
+                    {t("common.tip.label")}: test // test ⚠
                 </div>
                 <div className="row">
-                    <Button>Anmelden</Button>
+                    <Button>{t("common.action.login.label")}</Button>
                 </div>
             </Panel>
         </div>
@@ -99,12 +109,13 @@ function Login() {
 }
 
 function NotFound() {
+    const { t } = useTranslation();
     const error: any = useRouteError();
     console.log("Error: ", error);
     return (
         <div>
-            <h2>Not Found</h2>
-            <p>Sorry, that page doesn't exist!</p>
+            <h2>{t("common.error.http404.heading")}</h2>
+            <p>{t("common.error.http404.message")}</p>
             <p>Error: {error.statusText || error.message}</p>
         </div>
     );
