@@ -13,6 +13,7 @@ import Teams from "./pages/Teams.tsx";
 
 import "./i18n/config.ts";
 import "./index.css";
+import PersonManager from "./pages/admin/PersonManager.tsx";
 
 const router = createBrowserRouter([
     {
@@ -26,8 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/competitions",
-                element: <Competitions />,
-                children: []
+                element: <Competitions />
             },
             {
                 path: "/teams",
@@ -47,7 +47,13 @@ const router = createBrowserRouter([
             },
             {
                 path: "/admin",
-                element: <Admin />
+                element: <Admin />,
+                children: [
+                    {
+                        path: "/admin/personmgmt",
+                        element: <PersonManager/>
+                    }
+                ]
             },
         ]
     },

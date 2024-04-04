@@ -5,7 +5,7 @@ export default function Home() {
     const { t } = useTranslation();
     return (
         <div>
-            <h2>{t("common.homePage.shortLabel")}</h2>
+            <h2>{t("common.homePage.shortHeading")}</h2>
             <Paras></Paras>
         </div>
     );
