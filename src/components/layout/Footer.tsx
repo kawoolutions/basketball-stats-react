@@ -29,10 +29,10 @@ export default function Footer() {
                 <a href="https://react.dev/reference/react/hooks" target="_blank">
                     React Hooks
                 </a>
-                &nbsp;|&nbsp;
-                <a href="https://react-redux.js.org" target="_blank">
-                    React Redux
-                </a>
+                {/*&nbsp;|&nbsp;*/}
+                {/*<a href="https://react-redux.js.org" target="_blank">*/}
+                {/*    React Redux*/}
+                {/*</a>*/}
                 &nbsp;|&nbsp;
                 <a
                     href="https://primereact.org"
