@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import * as packageJson from "../../../package.json";
-import LocaleSwitcher from "../../i18n/LocaleSwitcher.tsx";
+import LocaleSwitcher from "../LocaleSwitcher.tsx";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
