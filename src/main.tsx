@@ -10,10 +10,10 @@ import Home from "./pages/Home.tsx";
 import Login from "./pages/Login.tsx";
 import Players from "./pages/Players.tsx";
 import Teams from "./pages/Teams.tsx";
+import PersonManager from "./pages/admin/PersonManager.tsx";
 
 import "./i18n/config.ts";
 import "./index.css";
-import PersonManager from "./pages/admin/PersonManager.tsx";
 
 const router = createBrowserRouter([
     {
@@ -48,17 +48,15 @@ const router = createBrowserRouter([
             {
                 path: "/admin",
                 element: <Admin />,
-                children: [
-                    {
-                        path: "/admin/personmgmt",
-                        element: <PersonManager/>
-                    }
-                ]
             },
+            {
+                path: "/admin/personmgmt",
+                element: <PersonManager/>
+            }
         ]
     },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
     <RouterProvider router={router} />
 )

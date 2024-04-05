@@ -13,6 +13,7 @@ export default function Header() {
                         src="http://3.79.245.148:8080/bbstats/jakarta.faces.resource/images/logo-mid-trans.png.xhtml?ln=bbstats"
                         width={132}
                         height={42}
+                        alt="Kawoolutions logo"
                         style={{margin: "30px 20px 20px 20px"}}
                     />
                     <span style={{verticalAlign: "32px"}}>Basketball Stats Demo v{packageJson.version} (React + TypeScript)</span>

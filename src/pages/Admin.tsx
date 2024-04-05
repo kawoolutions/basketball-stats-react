@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Admin() {
     const { t } = useTranslation();

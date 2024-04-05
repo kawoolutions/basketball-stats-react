@@ -19,6 +19,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                     marginRight: "auto",
                     position: "sticky",
                     top: "0",
+                    zIndex: "9999"
                 }}
             >
                 <Panel>

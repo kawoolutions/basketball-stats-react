@@ -59,6 +59,10 @@ export default function Footer() {
                     Vite
                 </a>
                 &nbsp;|&nbsp;
+                <a href="https://www.jetbrains.com/fleet" target="_blank">
+                    Fleet
+                </a>
+                &nbsp;|&nbsp;
                 <a href="https://www.jetbrains.com/webstorm" target="_blank">
                     WebStorm
                 </a>
