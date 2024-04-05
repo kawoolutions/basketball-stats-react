@@ -1,0 +1,1015 @@
+.fi {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.333333em;
+  line-height: 1em;
+  border-radius: 4px;
+  margin-right: 5px;
+  vertical-align: -1px;
+}
+.fi:before {
+  content: " ";
+}
+
+.fi-xx {
+  background-image: url("#{resource['flags:images/xx.svg']}");
+}
+
+.fi-ad {
+  background-image: url("#{resource['flags:images/ad.svg']}");
+}
+
+.fi-ae {
+  background-image: url("#{resource['flags:images/ae.svg']}");
+}
+
+.fi-af {
+  background-image: url("#{resource['flags:images/af.svg']}");
+}
+
+.fi-ag {
+  background-image: url("#{resource['flags:images/ag.svg']}");
+}
+
+.fi-ai {
+  background-image: url("#{resource['flags:images/ai.svg']}");
+}
+
+.fi-al {
+  background-image: url("#{resource['flags:images/al.svg']}");
+}
+
+.fi-am {
+  background-image: url("#{resource['flags:images/am.svg']}");
+}
+
+.fi-ao {
+  background-image: url("#{resource['flags:images/ao.svg']}");
+}
+
+.fi-aq {
+  background-image: url("#{resource['flags:images/aq.svg']}");
+}
+
+.fi-ar {
+  background-image: url("#{resource['flags:images/ar.svg']}");
+}
+
+.fi-as {
+  background-image: url("#{resource['flags:images/as.svg']}");
+}
+
+.fi-at {
+  background-image: url("#{resource['flags:images/at.svg']}");
+}
+
+.fi-au {
+  background-image: url("#{resource['flags:images/au.svg']}");
+}
+
+.fi-aw {
+  background-image: url("#{resource['flags:images/aw.svg']}");
+}
+
+.fi-ax {
+  background-image: url("#{resource['flags:images/ax.svg']}");
+}
+
+.fi-az {
+  background-image: url("#{resource['flags:images/az.svg']}");
+}
+
+.fi-ba {
+  background-image: url("#{resource['flags:images/ba.svg']}");
+}
+
+.fi-bb {
+  background-image: url("#{resource['flags:images/bb.svg']}");
+}
+
+.fi-bd {
+  background-image: url("#{resource['flags:images/bd.svg']}");
+}
+
+.fi-be {
+  background-image: url("#{resource['flags:images/be.svg']}");
+}
+
+.fi-bf {
+  background-image: url("#{resource['flags:images/bf.svg']}");
+}
+
+.fi-bg {
+  background-image: url("#{resource['flags:images/bg.svg']}");
+}
+
+.fi-bh {
+  background-image: url("#{resource['flags:images/bh.svg']}");
+}
+
+.fi-bi {
+  background-image: url("#{resource['flags:images/bi.svg']}");
+}
+
+.fi-bj {
+  background-image: url("#{resource['flags:images/bj.svg']}");
+}
+
+.fi-bl {
+  background-image: url("#{resource['flags:images/bl.svg']}");
+}
+
+.fi-bm {
+  background-image: url("#{resource['flags:images/bm.svg']}");
+}
+
+.fi-bn {
+  background-image: url("#{resource['flags:images/bn.svg']}");
+}
+
+.fi-bo {
+  background-image: url("#{resource['flags:images/bo.svg']}");
+}
+
+.fi-bq {
+  background-image: url("#{resource['flags:images/bq.svg']}");
+}
+
+.fi-br {
+  background-image: url("#{resource['flags:images/br.svg']}");
+}
+
+.fi-bs {
+  background-image: url("#{resource['flags:images/bs.svg']}");
+}
+
+.fi-bt {
+  background-image: url("#{resource['flags:images/bt.svg']}");
+}
+
+.fi-bv {
+  background-image: url("#{resource['flags:images/bv.svg']}");
+}
+
+.fi-bw {
+  background-image: url("#{resource['flags:images/bw.svg']}");
+}
+
+.fi-by {
+  background-image: url("#{resource['flags:images/by.svg']}");
+}
+
+.fi-bz {
+  background-image: url("#{resource['flags:images/bz.svg']}");
+}
+
+.fi-ca {
+  background-image: url("#{resource['flags:images/ca.svg']}");
+}
+
+.fi-cc {
+  background-image: url("#{resource['flags:images/cc.svg']}");
+}
+
+.fi-cd {
+  background-image: url("#{resource['flags:images/cd.svg']}");
+}
+
+.fi-cf {
+  background-image: url("#{resource['flags:images/cf.svg']}");
+}
+
+.fi-cg {
+  background-image: url("#{resource['flags:images/cg.svg']}");
+}
+
+.fi-ch {
+  background-image: url("#{resource['flags:images/ch.svg']}");
+}
+
+.fi-ci {
+  background-image: url("#{resource['flags:images/ci.svg']}");
+}
+
+.fi-ck {
+  background-image: url("#{resource['flags:images/ck.svg']}");
+}
+
+.fi-cl {
+  background-image: url("#{resource['flags:images/cl.svg']}");
+}
+
+.fi-cm {
+  background-image: url("#{resource['flags:images/cm.svg']}");
+}
+
+.fi-cn {
+  background-image: url("#{resource['flags:images/cn.svg']}");
+}
+
+.fi-co {
+  background-image: url("#{resource['flags:images/co.svg']}");
+}
+
+.fi-cr {
+  background-image: url("#{resource['flags:images/cr.svg']}");
+}
+
+.fi-cu {
+  background-image: url("#{resource['flags:images/cu.svg']}");
+}
+
+.fi-cv {
+  background-image: url("#{resource['flags:images/cv.svg']}");
+}
+
+.fi-cw {
+  background-image: url("#{resource['flags:images/cw.svg']}");
+}
+
+.fi-cx {
+  background-image: url("#{resource['flags:images/cx.svg']}");
+}
+
+.fi-cy {
+  background-image: url("#{resource['flags:images/cy.svg']}");
+}
+
+.fi-cz {
+  background-image: url("#{resource['flags:images/cz.svg']}");
+}
+
+.fi-de {
+  background-image: url("#{resource['flags:images/de.svg']}");
+}
+
+.fi-dj {
+  background-image: url("#{resource['flags:images/dj.svg']}");
+}
+
+.fi-dk {
+  background-image: url("#{resource['flags:images/dk.svg']}");
+}
+
+.fi-dm {
+  background-image: url("#{resource['flags:images/dm.svg']}");
+}
+
+.fi-do {
+  background-image: url("#{resource['flags:images/do.svg']}");
+}
+
+.fi-dz {
+  background-image: url("#{resource['flags:images/dz.svg']}");
+}
+
+.fi-ec {
+  background-image: url("#{resource['flags:images/ec.svg']}");
+}
+
+.fi-ee {
+  background-image: url("#{resource['flags:images/ee.svg']}");
+}
+
+.fi-eg {
+  background-image: url("#{resource['flags:images/eg.svg']}");
+}
+
+.fi-eh {
+  background-image: url("#{resource['flags:images/eh.svg']}");
+}
+
+.fi-er {
+  background-image: url("#{resource['flags:images/er.svg']}");
+}
+
+.fi-es {
+  background-image: url("#{resource['flags:images/es.svg']}");
+}
+
+.fi-et {
+  background-image: url("#{resource['flags:images/et.svg']}");
+}
+
+.fi-fi {
+  background-image: url("#{resource['flags:images/fi.svg']}");
+}
+
+.fi-fj {
+  background-image: url("#{resource['flags:images/fj.svg']}");
+}
+
+.fi-fk {
+  background-image: url("#{resource['flags:images/fk.svg']}");
+}
+
+.fi-fm {
+  background-image: url("#{resource['flags:images/fm.svg']}");
+}
+
+.fi-fo {
+  background-image: url("#{resource['flags:images/fo.svg']}");
+}
+
+.fi-fr {
+  background-image: url("#{resource['flags:images/fr.svg']}");
+}
+
+.fi-ga {
+  background-image: url("#{resource['flags:images/ga.svg']}");
+}
+
+.fi-gb {
+  background-image: url("#{resource['flags:images/gb.svg']}");
+}
+
+.fi-gd {
+  background-image: url("#{resource['flags:images/gd.svg']}");
+}
+
+.fi-ge {
+  background-image: url("#{resource['flags:images/ge.svg']}");
+}
+
+.fi-gf {
+  background-image: url("#{resource['flags:images/gf.svg']}");
+}
+
+.fi-gg {
+  background-image: url("#{resource['flags:images/gg.svg']}");
+}
+
+.fi-gh {
+  background-image: url("#{resource['flags:images/gh.svg']}");
+}
+
+.fi-gi {
+  background-image: url("#{resource['flags:images/gi.svg']}");
+}
+
+.fi-gl {
+  background-image: url("#{resource['flags:images/gl.svg']}");
+}
+
+.fi-gm {
+  background-image: url("#{resource['flags:images/gm.svg']}");
+}
+
+.fi-gn {
+  background-image: url("#{resource['flags:images/gn.svg']}");
+}
+
+.fi-gp {
+  background-image: url("#{resource['flags:images/gp.svg']}");
+}
+
+.fi-gq {
+  background-image: url("#{resource['flags:images/gq.svg']}");
+}
+
+.fi-gr {
+  background-image: url("#{resource['flags:images/gr.svg']}");
+}
+
+.fi-gs {
+  background-image: url("#{resource['flags:images/gs.svg']}");
+}
+
+.fi-gt {
+  background-image: url("#{resource['flags:images/gt.svg']}");
+}
+
+.fi-gu {
+  background-image: url("#{resource['flags:images/gu.svg']}");
+}
+
+.fi-gw {
+  background-image: url("#{resource['flags:images/gw.svg']}");
+}
+
+.fi-gy {
+  background-image: url("#{resource['flags:images/gy.svg']}");
+}
+
+.fi-hk {
+  background-image: url("#{resource['flags:images/hk.svg']}");
+}
+
+.fi-hm {
+  background-image: url("#{resource['flags:images/hm.svg']}");
+}
+
+.fi-hn {
+  background-image: url("#{resource['flags:images/hn.svg']}");
+}
+
+.fi-hr {
+  background-image: url("#{resource['flags:images/hr.svg']}");
+}
+
+.fi-ht {
+  background-image: url("#{resource['flags:images/ht.svg']}");
+}
+
+.fi-hu {
+  background-image: url("#{resource['flags:images/hu.svg']}");
+}
+
+.fi-id {
+  background-image: url("#{resource['flags:images/id.svg']}");
+}
+
+.fi-ie {
+  background-image: url("#{resource['flags:images/ie.svg']}");
+}
+
+.fi-il {
+  background-image: url("#{resource['flags:images/il.svg']}");
+}
+
+.fi-im {
+  background-image: url("#{resource['flags:images/im.svg']}");
+}
+
+.fi-in {
+  background-image: url("#{resource['flags:images/in.svg']}");
+}
+
+.fi-io {
+  background-image: url("#{resource['flags:images/io.svg']}");
+}
+
+.fi-iq {
+  background-image: url("#{resource['flags:images/iq.svg']}");
+}
+
+.fi-ir {
+  background-image: url("#{resource['flags:images/ir.svg']}");
+}
+
+.fi-is {
+  background-image: url("#{resource['flags:images/is.svg']}");
+}
+
+.fi-it {
+  background-image: url("#{resource['flags:images/it.svg']}");
+}
+
+.fi-je {
+  background-image: url("#{resource['flags:images/je.svg']}");
+}
+
+.fi-jm {
+  background-image: url("#{resource['flags:images/jm.svg']}");
+}
+
+.fi-jo {
+  background-image: url("#{resource['flags:images/jo.svg']}");
+}
+
+.fi-jp {
+  background-image: url("#{resource['flags:images/jp.svg']}");
+}
+
+.fi-ke {
+  background-image: url("#{resource['flags:images/ke.svg']}");
+}
+
+.fi-kg {
+  background-image: url("#{resource['flags:images/kg.svg']}");
+}
+
+.fi-kh {
+  background-image: url("#{resource['flags:images/kh.svg']}");
+}
+
+.fi-ki {
+  background-image: url("#{resource['flags:images/ki.svg']}");
+}
+
+.fi-km {
+  background-image: url("#{resource['flags:images/km.svg']}");
+}
+
+.fi-kn {
+  background-image: url("#{resource['flags:images/kn.svg']}");
+}
+
+.fi-kp {
+  background-image: url("#{resource['flags:images/kp.svg']}");
+}
+
+.fi-kr {
+  background-image: url("#{resource['flags:images/kr.svg']}");
+}
+
+.fi-kw {
+  background-image: url("#{resource['flags:images/kw.svg']}");
+}
+
+.fi-ky {
+  background-image: url("#{resource['flags:images/ky.svg']}");
+}
+
+.fi-kz {
+  background-image: url("#{resource['flags:images/kz.svg']}");
+}
+
+.fi-la {
+  background-image: url("#{resource['flags:images/la.svg']}");
+}
+
+.fi-lb {
+  background-image: url("#{resource['flags:images/lb.svg']}");
+}
+
+.fi-lc {
+  background-image: url("#{resource['flags:images/lc.svg']}");
+}
+
+.fi-li {
+  background-image: url("#{resource['flags:images/li.svg']}");
+}
+
+.fi-lk {
+  background-image: url("#{resource['flags:images/lk.svg']}");
+}
+
+.fi-lr {
+  background-image: url("#{resource['flags:images/lr.svg']}");
+}
+
+.fi-ls {
+  background-image: url("#{resource['flags:images/ls.svg']}");
+}
+
+.fi-lt {
+  background-image: url("#{resource['flags:images/lt.svg']}");
+}
+
+.fi-lu {
+  background-image: url("#{resource['flags:images/lu.svg']}");
+}
+
+.fi-lv {
+  background-image: url("#{resource['flags:images/lv.svg']}");
+}
+
+.fi-ly {
+  background-image: url("#{resource['flags:images/ly.svg']}");
+}
+
+.fi-ma {
+  background-image: url("#{resource['flags:images/ma.svg']}");
+}
+
+.fi-mc {
+  background-image: url("#{resource['flags:images/mc.svg']}");
+}
+
+.fi-md {
+  background-image: url("#{resource['flags:images/md.svg']}");
+}
+
+.fi-me {
+  background-image: url("#{resource['flags:images/me.svg']}");
+}
+
+.fi-mf {
+  background-image: url("#{resource['flags:images/mf.svg']}");
+}
+
+.fi-mg {
+  background-image: url("#{resource['flags:images/mg.svg']}");
+}
+
+.fi-mh {
+  background-image: url("#{resource['flags:images/mh.svg']}");
+}
+
+.fi-mk {
+  background-image: url("#{resource['flags:images/mk.svg']}");
+}
+
+.fi-ml {
+  background-image: url("#{resource['flags:images/ml.svg']}");
+}
+
+.fi-mm {
+  background-image: url("#{resource['flags:images/mm.svg']}");
+}
+
+.fi-mn {
+  background-image: url("#{resource['flags:images/mn.svg']}");
+}
+
+.fi-mo {
+  background-image: url("#{resource['flags:images/mo.svg']}");
+}
+
+.fi-mp {
+  background-image: url("#{resource['flags:images/mp.svg']}");
+}
+
+.fi-mq {
+  background-image: url("#{resource['flags:images/mq.svg']}");
+}
+
+.fi-mr {
+  background-image: url("#{resource['flags:images/mr.svg']}");
+}
+
+.fi-ms {
+  background-image: url("#{resource['flags:images/ms.svg']}");
+}
+
+.fi-mt {
+  background-image: url("#{resource['flags:images/mt.svg']}");
+}
+
+.fi-mu {
+  background-image: url("#{resource['flags:images/mu.svg']}");
+}
+
+.fi-mv {
+  background-image: url("#{resource['flags:images/mv.svg']}");
+}
+
+.fi-mw {
+  background-image: url("#{resource['flags:images/mw.svg']}");
+}
+
+.fi-mx {
+  background-image: url("#{resource['flags:images/mx.svg']}");
+}
+
+.fi-my {
+  background-image: url("#{resource['flags:images/my.svg']}");
+}
+
+.fi-mz {
+  background-image: url("#{resource['flags:images/mz.svg']}");
+}
+
+.fi-na {
+  background-image: url("#{resource['flags:images/na.svg']}");
+}
+
+.fi-nc {
+  background-image: url("#{resource['flags:images/nc.svg']}");
+}
+
+.fi-ne {
+  background-image: url("#{resource['flags:images/ne.svg']}");
+}
+
+.fi-nf {
+  background-image: url("#{resource['flags:images/nf.svg']}");
+}
+
+.fi-ng {
+  background-image: url("#{resource['flags:images/ng.svg']}");
+}
+
+.fi-ni {
+  background-image: url("#{resource['flags:images/ni.svg']}");
+}
+
+.fi-nl {
+  background-image: url("#{resource['flags:images/nl.svg']}");
+}
+
+.fi-no {
+  background-image: url("#{resource['flags:images/no.svg']}");
+}
+
+.fi-np {
+  background-image: url("#{resource['flags:images/np.svg']}");
+}
+
+.fi-nr {
+  background-image: url("#{resource['flags:images/nr.svg']}");
+}
+
+.fi-nu {
+  background-image: url("#{resource['flags:images/nu.svg']}");
+}
+
+.fi-nz {
+  background-image: url("#{resource['flags:images/nz.svg']}");
+}
+
+.fi-om {
+  background-image: url("#{resource['flags:images/om.svg']}");
+}
+
+.fi-pa {
+  background-image: url("#{resource['flags:images/pa.svg']}");
+}
+
+.fi-pe {
+  background-image: url("#{resource['flags:images/pe.svg']}");
+}
+
+.fi-pf {
+  background-image: url("#{resource['flags:images/pf.svg']}");
+}
+
+.fi-pg {
+  background-image: url("#{resource['flags:images/pg.svg']}");
+}
+
+.fi-ph {
+  background-image: url("#{resource['flags:images/ph.svg']}");
+}
+
+.fi-pk {
+  background-image: url("#{resource['flags:images/pk.svg']}");
+}
+
+.fi-pl {
+  background-image: url("#{resource['flags:images/pl.svg']}");
+}
+
+.fi-pm {
+  background-image: url("#{resource['flags:images/pm.svg']}");
+}
+
+.fi-pn {
+  background-image: url("#{resource['flags:images/pn.svg']}");
+}
+
+.fi-pr {
+  background-image: url("#{resource['flags:images/pr.svg']}");
+}
+
+.fi-ps {
+  background-image: url("#{resource['flags:images/ps.svg']}");
+}
+
+.fi-pt {
+  background-image: url("#{resource['flags:images/pt.svg']}");
+}
+
+.fi-pw {
+  background-image: url("#{resource['flags:images/pw.svg']}");
+}
+
+.fi-py {
+  background-image: url("#{resource['flags:images/py.svg']}");
+}
+
+.fi-qa {
+  background-image: url("#{resource['flags:images/qa.svg']}");
+}
+
+.fi-re {
+  background-image: url("#{resource['flags:images/re.svg']}");
+}
+
+.fi-ro {
+  background-image: url("#{resource['flags:images/ro.svg']}");
+}
+
+.fi-rs {
+  background-image: url("#{resource['flags:images/rs.svg']}");
+}
+
+.fi-ru {
+  background-image: url("#{resource['flags:images/ru.svg']}");
+}
+
+.fi-rw {
+  background-image: url("#{resource['flags:images/rw.svg']}");
+}
+
+.fi-sa {
+  background-image: url("#{resource['flags:images/sa.svg']}");
+}
+
+.fi-sb {
+  background-image: url("#{resource['flags:images/sb.svg']}");
+}
+
+.fi-sc {
+  background-image: url("#{resource['flags:images/sc.svg']}");
+}
+
+.fi-sd {
+  background-image: url("#{resource['flags:images/sd.svg']}");
+}
+
+.fi-se {
+  background-image: url("#{resource['flags:images/se.svg']}");
+}
+
+.fi-sg {
+  background-image: url("#{resource['flags:images/sg.svg']}");
+}
+
+.fi-sh {
+  background-image: url("#{resource['flags:images/sh.svg']}");
+}
+
+.fi-si {
+  background-image: url("#{resource['flags:images/si.svg']}");
+}
+
+.fi-sj {
+  background-image: url("#{resource['flags:images/sj.svg']}");
+}
+
+.fi-sk {
+  background-image: url("#{resource['flags:images/sk.svg']}");
+}
+
+.fi-sl {
+  background-image: url("#{resource['flags:images/sl.svg']}");
+}
+
+.fi-sm {
+  background-image: url("#{resource['flags:images/sm.svg']}");
+}
+
+.fi-sn {
+  background-image: url("#{resource['flags:images/sn.svg']}");
+}
+
+.fi-so {
+  background-image: url("#{resource['flags:images/so.svg']}");
+}
+
+.fi-sr {
+  background-image: url("#{resource['flags:images/sr.svg']}");
+}
+
+.fi-ss {
+  background-image: url("#{resource['flags:images/ss.svg']}");
+}
+
+.fi-st {
+  background-image: url("#{resource['flags:images/st.svg']}");
+}
+
+.fi-sv {
+  background-image: url("#{resource['flags:images/sv.svg']}");
+}
+
+.fi-sx {
+  background-image: url("#{resource['flags:images/sx.svg']}");
+}
+
+.fi-sy {
+  background-image: url("#{resource['flags:images/sy.svg']}");
+}
+
+.fi-sz {
+  background-image: url("#{resource['flags:images/sz.svg']}");
+}
+
+.fi-tc {
+  background-image: url("#{resource['flags:images/tc.svg']}");
+}
+
+.fi-td {
+  background-image: url("#{resource['flags:images/td.svg']}");
+}
+
+.fi-tf {
+  background-image: url("#{resource['flags:images/tf.svg']}");
+}
+
+.fi-tg {
+  background-image: url("#{resource['flags:images/tg.svg']}");
+}
+
+.fi-th {
+  background-image: url("#{resource['flags:images/th.svg']}");
+}
+
+.fi-tj {
+  background-image: url("#{resource['flags:images/tj.svg']}");
+}
+
+.fi-tk {
+  background-image: url("#{resource['flags:images/tk.svg']}");
+}
+
+.fi-tl {
+  background-image: url("#{resource['flags:images/tl.svg']}");
+}
+
+.fi-tm {
+  background-image: url("#{resource['flags:images/tm.svg']}");
+}
+
+.fi-tn {
+  background-image: url("#{resource['flags:images/tn.svg']}");
+}
+
+.fi-to {
+  background-image: url("#{resource['flags:images/to.svg']}");
+}
+
+.fi-tr {
+  background-image: url("#{resource['flags:images/tr.svg']}");
+}
+
+.fi-tt {
+  background-image: url("#{resource['flags:images/tt.svg']}");
+}
+
+.fi-tv {
+  background-image: url("#{resource['flags:images/tv.svg']}");
+}
+
+.fi-tw {
+  background-image: url("#{resource['flags:images/tw.svg']}");
+}
+
+.fi-tz {
+  background-image: url("#{resource['flags:images/tz.svg']}");
+}
+
+.fi-ua {
+  background-image: url("#{resource['flags:images/ua.svg']}");
+}
+
+.fi-ug {
+  background-image: url("#{resource['flags:images/ug.svg']}");
+}
+
+.fi-um {
+  background-image: url("#{resource['flags:images/um.svg']}");
+}
+
+.fi-us {
+  background-image: url("#{resource['flags:images/us.svg']}");
+}
+
+.fi-uy {
+  background-image: url("#{resource['flags:images/uy.svg']}");
+}
+
+.fi-uz {
+  background-image: url("#{resource['flags:images/uz.svg']}");
+}
+
+.fi-va {
+  background-image: url("#{resource['flags:images/va.svg']}");
+}
+
+.fi-vc {
+  background-image: url("#{resource['flags:images/vc.svg']}");
+}
+
+.fi-ve {
+  background-image: url("#{resource['flags:images/ve.svg']}");
+}
+
+.fi-vg {
+  background-image: url("#{resource['flags:images/vg.svg']}");
+}
+
+.fi-vi {
+  background-image: url("#{resource['flags:images/vi.svg']}");
+}
+
+.fi-vn {
+  background-image: url("#{resource['flags:images/vn.svg']}");
+}
+
+.fi-vu {
+  background-image: url("#{resource['flags:images/vu.svg']}");
+}
+
+.fi-wf {
+  background-image: url("#{resource['flags:images/wf.svg']}");
+}
+
+.fi-ws {
+  background-image: url("#{resource['flags:images/ws.svg']}");
+}
+
+.fi-ye {
+  background-image: url("#{resource['flags:images/ye.svg']}");
+}
+
+.fi-yt {
+  background-image: url("#{resource['flags:images/yt.svg']}");
+}
+
+.fi-za {
+  background-image: url("#{resource['flags:images/za.svg']}");
+}
+
+.fi-zm {
+  background-image: url("#{resource['flags:images/zm.svg']}");
+}
+
+.fi-zw {
+  background-image: url("#{resource['flags:images/zw.svg']}");
+}
