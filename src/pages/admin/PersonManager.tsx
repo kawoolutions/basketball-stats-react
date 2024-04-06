@@ -81,9 +81,17 @@ export default function PersonManager() {
     };
 
     const birthDateBody = (person: { birthDate: string }) => {
-
-        const localizedDateFormat = t("common.date.format");
-        return person.birthDate ? Date.parse(person.birthDate).toLocaleString(i18n.resolvedLanguage) : null;
+//        const localizedDateFormat = t("common.date.format");
+        const language = i18n.resolvedLanguage;
+        const locale = language === "de" ? "de-DE" : "en-US";
+        const dateNumber = Date.parse(person.birthDate);
+        const date = new Date(dateNumber);
+        const dateFormat = new Intl.DateTimeFormat(locale, {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric'
+        });
+        return person.birthDate ? dateFormat.format(date) : null;
     }
 
     const mobilePhoneNumber = (person: { id: number, phoneNumbers: [] }) => {
@@ -93,7 +101,7 @@ export default function PersonManager() {
             <div style={{textAlign: "center"}}>
                 {person.id}
             </div>
-            );
+        );
     };
 
     // const toast;
