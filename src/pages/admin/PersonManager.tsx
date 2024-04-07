@@ -109,14 +109,30 @@ export default function PersonManager() {
         );
     };
 
-    const mobilePhoneNumber = (person: { id: number, phoneNumbers: [] }) => {
-//        const phoneNumbers = person.phoneNumbers;
+    type PhoneNumber = {
+        contactId: number;
+        type: string;
+        countryCode: number;
+        areaCode: number;
+        subscriberNbr: number;
+    }
 
-        return (
-            <div style={{textAlign: "center"}}>
-                {person.id}
-            </div>
-        );
+    const mobilePhoneNumber = (person: { phoneNumbers: Record<string, PhoneNumber> }) => {
+        const phoneNumbers = person.phoneNumbers;
+//        for (const [key, phoneNumber] of Object.entries(phoneNumbers)) {
+//            console.log(key, "+" + phoneNumber!.countryCode + " " + phoneNumber!.areaCode + " " + phoneNumber!.subscriberNbr);
+//        }
+        return Object.entries(phoneNumbers).map<ReactNode>((e) => "+" + e[1]!.countryCode + " " + e[1]!.areaCode + " " + e[1]!.subscriberNbr).join(", ");
+//        return (
+//            Object.entries(phoneNumbers).map<ReactNode>( (e, index) => {
+//                return (
+//                    <Fragment key={e[0]}>
+//                        {index > 0 && ", "}
+//                        {"+" + e[1]!.countryCode + " " + e[1]!.areaCode + " " + e[1]!.subscriberNbr}
+//                    </Fragment>
+//                );
+//            })
+//        );
     };
 
     // const toast;
@@ -155,7 +171,7 @@ export default function PersonManager() {
                 <Column field="countryCode" header={t("common.country.heading")} body={countryBody} sortable style={{width: "7.5%"}}/>
                 <Column field="birthDate" header={t("common.birthDate.heading")} body={birthDateBody} sortable style={{width: "10%"}}/>
                 <Column field="emailAddresses" header={t("common.emailAddress.heading")} body={emailAddresses} sortable style={{width: "10.5%"}}/>
-                <Column field="phoneNumbers" header={t("enum.phoneNumberType.MOBILE.heading")} body={mobilePhoneNumber} sortable style={{width: "9%"}}/>
+                <Column field="phoneNumbers" header={t("entity.phoneNumber.plural.heading")} body={mobilePhoneNumber} sortable style={{width: "9%"}}/>
                 <Column field="actions" style={{width: "7%"}}/>
             </DataTable>
         </div>
