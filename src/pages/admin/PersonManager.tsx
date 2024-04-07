@@ -122,17 +122,8 @@ export default function PersonManager() {
 //        for (const [key, phoneNumber] of Object.entries(phoneNumbers)) {
 //            console.log(key, "+" + phoneNumber!.countryCode + " " + phoneNumber!.areaCode + " " + phoneNumber!.subscriberNbr);
 //        }
-        return Object.entries(phoneNumbers).map<ReactNode>((e) => "+" + e[1]!.countryCode + " " + e[1]!.areaCode + " " + e[1]!.subscriberNbr).join(", ");
-//        return (
-//            Object.entries(phoneNumbers).map<ReactNode>( (e, index) => {
-//                return (
-//                    <Fragment key={e[0]}>
-//                        {index > 0 && ", "}
-//                        {"+" + e[1]!.countryCode + " " + e[1]!.areaCode + " " + e[1]!.subscriberNbr}
-//                    </Fragment>
-//                );
-//            })
-//        );
+        const phoneNumberPattern = t("entity.phoneNumber.format");
+        return Object.entries(phoneNumbers).map<ReactNode>((e) => phoneNumberPattern.replace("{0}", "" + e[1]!.countryCode).replace("{1}", "" + e[1]!.areaCode).replace("{2}", "" + e[1]!.subscriberNbr)).join(", ");
     };
 
     // const toast;
