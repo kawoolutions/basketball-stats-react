@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {Fragment, ReactNode, useEffect, useState} from "react";
 
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
@@ -94,6 +94,21 @@ export default function PersonManager() {
         return person.birthDate ? dateFormat.format(date) : null;
     }
 
+    const emailAddresses = (person: { emailAddresses: [] }) => {
+//        return person.emailAddresses.join(", ");
+
+        return (
+            person.emailAddresses.map<ReactNode>( (e, index) => {
+                return (
+                    <Fragment key={e}>
+                        {index > 0 && ", "}
+                        <a href={`mailto:${e}`}>{e}</a>
+                    </Fragment>
+                );
+            })
+        );
+    };
+
     const mobilePhoneNumber = (person: { id: number, phoneNumbers: [] }) => {
 //        const phoneNumbers = person.phoneNumbers;
 
@@ -139,7 +154,7 @@ export default function PersonManager() {
                 <Column field="cityName" header={t("common.city.heading")} sortable style={{width: "7%"}}/>
                 <Column field="countryCode" header={t("common.country.heading")} body={countryBody} sortable style={{width: "7.5%"}}/>
                 <Column field="birthDate" header={t("common.birthDate.heading")} body={birthDateBody} sortable style={{width: "10%"}}/>
-                <Column field="emailAddresses" header={t("common.emailAddress.heading")} sortable style={{width: "10.5%"}}/>
+                <Column field="emailAddresses" header={t("common.emailAddress.heading")} body={emailAddresses} sortable style={{width: "10.5%"}}/>
                 <Column field="phoneNumbers" header={t("enum.phoneNumberType.MOBILE.heading")} body={mobilePhoneNumber} sortable style={{width: "9%"}}/>
                 <Column field="actions" style={{width: "7%"}}/>
             </DataTable>
