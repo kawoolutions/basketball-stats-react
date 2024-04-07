@@ -25,14 +25,16 @@ export default function LocaleSwitcher() {
     // }
 
     const selectableCountriesTemplate = (option: Record<string, string>) => {
+        const countryCode: string = option.code.substring(3).toLowerCase();
         return (
             <div className="country-item">
-                <Flag code={option.code} fallback={<span>Unknown</span>} height="16" style={{verticalAlign: -2}}/>
+                <Flag code={countryCode} fallback={t("common.flag.label")} height="16" style={{verticalAlign: -2}}/>
                 <span style={{marginLeft: "8px"}}>{option.name}</span>
             </div>
         );
     }
 
+//    console.log("Dropdown code: " + i18n.resolvedLanguage);
     return (
         <Dropdown value={i18n.resolvedLanguage}
                   onChange={(e) => i18n.changeLanguage(e.value)}

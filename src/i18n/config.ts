@@ -5,8 +5,8 @@ import deJson from './de.json'
 import usJson from './us.json'
 
 export const supportedLngs = [
-    {code: "us", name: "English"},
-    {code: "de", name: "Deutsch"},
+    {code: "en_US", name: "English"},
+    {code: "de_DE", name: "Deutsch"},
 ];
 
 i18n
@@ -14,20 +14,20 @@ i18n
     .init({
 
         resources: {
-            us: { ...usJson },
-            de: { ...deJson },
+            en_US: { ...usJson },
+            de_DE: { ...deJson },
         },
 
         // Specifies the default language (locale) used
         // when a user visits our site for the first time.
         // We use English here, but feel free to use
         // whichever locale you want.
-        lng: "us",
+        lng: "en_US",
 
         // Fallback locale used when a translation is
         // missing in the active locale. Again, use your
         // preferred locale here.
-        fallbackLng: "us",
+        fallbackLng: "en_US",
 
         // Enables useful output in the browser’s
         // dev console.

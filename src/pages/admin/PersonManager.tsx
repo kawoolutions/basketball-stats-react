@@ -81,9 +81,8 @@ export default function PersonManager() {
     };
 
     const birthDateBody = (person: { birthDate: string }) => {
-//        const localizedDateFormat = t("common.date.format");
-        const language = i18n.resolvedLanguage;
-        const locale = language === "de" ? "de-DE" : "en-US";
+        const underscoredLocale = i18n.resolvedLanguage;
+        const locale = underscoredLocale!.replace("_", "-");
         const dateNumber = Date.parse(person.birthDate);
         const date = new Date(dateNumber);
         const dateFormat = new Intl.DateTimeFormat(locale, {
@@ -91,6 +90,7 @@ export default function PersonManager() {
             month: 'numeric',
             day: 'numeric'
         });
+//        console.log("Date = " + date + ", underscored locale = " + underscoredLocale + ", locale = " + locale + ", result = " + dateFormat);
         return person.birthDate ? dateFormat.format(date) : null;
     }
 

@@ -268,6 +268,7 @@
         "common.firstName.heading": "Vorname",
         "common.firstName.label": "Vorname",
         "common.firstName.requiredMessage": "Vorname ist erforderlich.",
+        "common.flag.label": "Flagge",
         "common.general.heading": "Allgemein",
         "common.general.label": "Allgemein",
         "common.group.heading": "Gruppe",
