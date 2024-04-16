@@ -16,7 +16,7 @@ export default function Header() {
                         alt="Kawoolutions logo"
                         style={{margin: "30px 20px 20px 20px"}}
                     />
-                    <span style={{verticalAlign: "32px"}}>Basketball Stats Demo v{packageJson.version} (React + TypeScript)</span>
+                    <span style={{verticalAlign: "32px"}}>Basketball Stats Demo v{packageJson.version} (Spring Boot + React)</span>
                 </div>
             </div>
             <div id="menu-right" className="">
