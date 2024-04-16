@@ -1,1015 +1,1016 @@
 .fi {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  display: inline-block;
-  width: 1.333333em;
-  line-height: 1em;
-  border-radius: 4px;
-  margin-right: 5px;
-  vertical-align: -1px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.333333em;
+    line-height: 1em;
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: -1px;
 }
+
 .fi:before {
-  content: " ";
+    content: " ";
 }
 
 .fi-xx {
-  background-image: url("#{resource['flags:images/xx.svg']}");
+    background-image: url("/src/assets/flags/xx.svg");
 }
 
 .fi-ad {
-  background-image: url("#{resource['flags:images/ad.svg']}");
+    background-image: url("/src/assets/flags/ad.svg");
 }
 
 .fi-ae {
-  background-image: url("#{resource['flags:images/ae.svg']}");
+    background-image: url("/src/assets/flags/ae.svg");
 }
 
 .fi-af {
-  background-image: url("#{resource['flags:images/af.svg']}");
+    background-image: url("/src/assets/flags/af.svg");
 }
 
 .fi-ag {
-  background-image: url("#{resource['flags:images/ag.svg']}");
+    background-image: url("/src/assets/flags/ag.svg");
 }
 
 .fi-ai {
-  background-image: url("#{resource['flags:images/ai.svg']}");
+    background-image: url("/src/assets/flags/ai.svg");
 }
 
 .fi-al {
-  background-image: url("#{resource['flags:images/al.svg']}");
+    background-image: url("/src/assets/flags/al.svg");
 }
 
 .fi-am {
-  background-image: url("#{resource['flags:images/am.svg']}");
+    background-image: url("/src/assets/flags/am.svg");
 }
 
 .fi-ao {
-  background-image: url("#{resource['flags:images/ao.svg']}");
+    background-image: url("/src/assets/flags/ao.svg");
 }
 
 .fi-aq {
-  background-image: url("#{resource['flags:images/aq.svg']}");
+    background-image: url("/src/assets/flags/aq.svg");
 }
 
 .fi-ar {
-  background-image: url("#{resource['flags:images/ar.svg']}");
+    background-image: url("/src/assets/flags/ar.svg");
 }
 
 .fi-as {
-  background-image: url("#{resource['flags:images/as.svg']}");
+    background-image: url("/src/assets/flags/as.svg");
 }
 
 .fi-at {
-  background-image: url("#{resource['flags:images/at.svg']}");
+    background-image: url("/src/assets/flags/at.svg");
 }
 
 .fi-au {
-  background-image: url("#{resource['flags:images/au.svg']}");
+    background-image: url("/src/assets/flags/au.svg");
 }
 
 .fi-aw {
-  background-image: url("#{resource['flags:images/aw.svg']}");
+    background-image: url("/src/assets/flags/aw.svg");
 }
 
 .fi-ax {
-  background-image: url("#{resource['flags:images/ax.svg']}");
+    background-image: url("/src/assets/flags/ax.svg");
 }
 
 .fi-az {
-  background-image: url("#{resource['flags:images/az.svg']}");
+    background-image: url("/src/assets/flags/az.svg");
 }
 
 .fi-ba {
-  background-image: url("#{resource['flags:images/ba.svg']}");
+    background-image: url("/src/assets/flags/ba.svg");
 }
 
 .fi-bb {
-  background-image: url("#{resource['flags:images/bb.svg']}");
+    background-image: url("/src/assets/flags/bb.svg");
 }
 
 .fi-bd {
-  background-image: url("#{resource['flags:images/bd.svg']}");
+    background-image: url("/src/assets/flags/bd.svg");
 }
 
 .fi-be {
-  background-image: url("#{resource['flags:images/be.svg']}");
+    background-image: url("/src/assets/flags/be.svg");
 }
 
 .fi-bf {
-  background-image: url("#{resource['flags:images/bf.svg']}");
+    background-image: url("/src/assets/flags/bf.svg");
 }
 
 .fi-bg {
-  background-image: url("#{resource['flags:images/bg.svg']}");
+    background-image: url("/src/assets/flags/bg.svg");
 }
 
 .fi-bh {
-  background-image: url("#{resource['flags:images/bh.svg']}");
+    background-image: url("/src/assets/flags/bh.svg");
 }
 
 .fi-bi {
-  background-image: url("#{resource['flags:images/bi.svg']}");
+    background-image: url("/src/assets/flags/bi.svg");
 }
 
 .fi-bj {
-  background-image: url("#{resource['flags:images/bj.svg']}");
+    background-image: url("/src/assets/flags/bj.svg");
 }
 
 .fi-bl {
-  background-image: url("#{resource['flags:images/bl.svg']}");
+    background-image: url("/src/assets/flags/bl.svg");
 }
 
 .fi-bm {
-  background-image: url("#{resource['flags:images/bm.svg']}");
+    background-image: url("/src/assets/flags/bm.svg");
 }
 
 .fi-bn {
-  background-image: url("#{resource['flags:images/bn.svg']}");
+    background-image: url("/src/assets/flags/bn.svg");
 }
 
 .fi-bo {
-  background-image: url("#{resource['flags:images/bo.svg']}");
+    background-image: url("/src/assets/flags/bo.svg");
 }
 
 .fi-bq {
-  background-image: url("#{resource['flags:images/bq.svg']}");
+    background-image: url("/src/assets/flags/bq.svg");
 }
 
 .fi-br {
-  background-image: url("#{resource['flags:images/br.svg']}");
+    background-image: url("/src/assets/flags/br.svg");
 }
 
 .fi-bs {
-  background-image: url("#{resource['flags:images/bs.svg']}");
+    background-image: url("/src/assets/flags/bs.svg");
 }
 
 .fi-bt {
-  background-image: url("#{resource['flags:images/bt.svg']}");
+    background-image: url("/src/assets/flags/bt.svg");
 }
 
 .fi-bv {
-  background-image: url("#{resource['flags:images/bv.svg']}");
+    background-image: url("/src/assets/flags/bv.svg");
 }
 
 .fi-bw {
-  background-image: url("#{resource['flags:images/bw.svg']}");
+    background-image: url("/src/assets/flags/bw.svg");
 }
 
 .fi-by {
-  background-image: url("#{resource['flags:images/by.svg']}");
+    background-image: url("/src/assets/flags/by.svg");
 }
 
 .fi-bz {
-  background-image: url("#{resource['flags:images/bz.svg']}");
+    background-image: url("/src/assets/flags/bz.svg");
 }
 
 .fi-ca {
-  background-image: url("#{resource['flags:images/ca.svg']}");
+    background-image: url("/src/assets/flags/ca.svg");
 }
 
 .fi-cc {
-  background-image: url("#{resource['flags:images/cc.svg']}");
+    background-image: url("/src/assets/flags/cc.svg");
 }
 
 .fi-cd {
-  background-image: url("#{resource['flags:images/cd.svg']}");
+    background-image: url("/src/assets/flags/cd.svg");
 }
 
 .fi-cf {
-  background-image: url("#{resource['flags:images/cf.svg']}");
+    background-image: url("/src/assets/flags/cf.svg");
 }
 
 .fi-cg {
-  background-image: url("#{resource['flags:images/cg.svg']}");
+    background-image: url("/src/assets/flags/cg.svg");
 }
 
 .fi-ch {
-  background-image: url("#{resource['flags:images/ch.svg']}");
+    background-image: url("/src/assets/flags/ch.svg");
 }
 
 .fi-ci {
-  background-image: url("#{resource['flags:images/ci.svg']}");
+    background-image: url("/src/assets/flags/ci.svg");
 }
 
 .fi-ck {
-  background-image: url("#{resource['flags:images/ck.svg']}");
+    background-image: url("/src/assets/flags/ck.svg");
 }
 
 .fi-cl {
-  background-image: url("#{resource['flags:images/cl.svg']}");
+    background-image: url("/src/assets/flags/cl.svg");
 }
 
 .fi-cm {
-  background-image: url("#{resource['flags:images/cm.svg']}");
+    background-image: url("/src/assets/flags/cm.svg");
 }
 
 .fi-cn {
-  background-image: url("#{resource['flags:images/cn.svg']}");
+    background-image: url("/src/assets/flags/cn.svg");
 }
 
 .fi-co {
-  background-image: url("#{resource['flags:images/co.svg']}");
+    background-image: url("/src/assets/flags/co.svg");
 }
 
 .fi-cr {
-  background-image: url("#{resource['flags:images/cr.svg']}");
+    background-image: url("/src/assets/flags/cr.svg");
 }
 
 .fi-cu {
-  background-image: url("#{resource['flags:images/cu.svg']}");
+    background-image: url("/src/assets/flags/cu.svg");
 }
 
 .fi-cv {
-  background-image: url("#{resource['flags:images/cv.svg']}");
+    background-image: url("/src/assets/flags/cv.svg");
 }
 
 .fi-cw {
-  background-image: url("#{resource['flags:images/cw.svg']}");
+    background-image: url("/src/assets/flags/cw.svg");
 }
 
 .fi-cx {
-  background-image: url("#{resource['flags:images/cx.svg']}");
+    background-image: url("/src/assets/flags/cx.svg");
 }
 
 .fi-cy {
-  background-image: url("#{resource['flags:images/cy.svg']}");
+    background-image: url("/src/assets/flags/cy.svg");
 }
 
 .fi-cz {
-  background-image: url("#{resource['flags:images/cz.svg']}");
+    background-image: url("/src/assets/flags/cz.svg");
 }
 
 .fi-de {
-  background-image: url("#{resource['flags:images/de.svg']}");
+    background-image: url("/src/assets/flags/de.svg");
 }
 
 .fi-dj {
-  background-image: url("#{resource['flags:images/dj.svg']}");
+    background-image: url("/src/assets/flags/dj.svg");
 }
 
 .fi-dk {
-  background-image: url("#{resource['flags:images/dk.svg']}");
+    background-image: url("/src/assets/flags/dk.svg");
 }
 
 .fi-dm {
-  background-image: url("#{resource['flags:images/dm.svg']}");
+    background-image: url("/src/assets/flags/dm.svg");
 }
 
 .fi-do {
-  background-image: url("#{resource['flags:images/do.svg']}");
+    background-image: url("/src/assets/flags/do.svg");
 }
 
 .fi-dz {
-  background-image: url("#{resource['flags:images/dz.svg']}");
+    background-image: url("/src/assets/flags/dz.svg");
 }
 
 .fi-ec {
-  background-image: url("#{resource['flags:images/ec.svg']}");
+    background-image: url("/src/assets/flags/ec.svg");
 }
 
 .fi-ee {
-  background-image: url("#{resource['flags:images/ee.svg']}");
+    background-image: url("/src/assets/flags/ee.svg");
 }
 
 .fi-eg {
-  background-image: url("#{resource['flags:images/eg.svg']}");
+    background-image: url("/src/assets/flags/eg.svg");
 }
 
 .fi-eh {
-  background-image: url("#{resource['flags:images/eh.svg']}");
+    background-image: url("/src/assets/flags/eh.svg");
 }
 
 .fi-er {
-  background-image: url("#{resource['flags:images/er.svg']}");
+    background-image: url("/src/assets/flags/er.svg");
 }
 
 .fi-es {
-  background-image: url("#{resource['flags:images/es.svg']}");
+    background-image: url("/src/assets/flags/es.svg");
 }
 
 .fi-et {
-  background-image: url("#{resource['flags:images/et.svg']}");
+    background-image: url("/src/assets/flags/et.svg");
 }
 
 .fi-fi {
-  background-image: url("#{resource['flags:images/fi.svg']}");
+    background-image: url("/src/assets/flags/fi.svg");
 }
 
 .fi-fj {
-  background-image: url("#{resource['flags:images/fj.svg']}");
+    background-image: url("/src/assets/flags/fj.svg");
 }
 
 .fi-fk {
-  background-image: url("#{resource['flags:images/fk.svg']}");
+    background-image: url("/src/assets/flags/fk.svg");
 }
 
 .fi-fm {
-  background-image: url("#{resource['flags:images/fm.svg']}");
+    background-image: url("/src/assets/flags/fm.svg");
 }
 
 .fi-fo {
-  background-image: url("#{resource['flags:images/fo.svg']}");
+    background-image: url("/src/assets/flags/fo.svg");
 }
 
 .fi-fr {
-  background-image: url("#{resource['flags:images/fr.svg']}");
+    background-image: url("/src/assets/flags/fr.svg");
 }
 
 .fi-ga {
-  background-image: url("#{resource['flags:images/ga.svg']}");
+    background-image: url("/src/assets/flags/ga.svg");
 }
 
 .fi-gb {
-  background-image: url("#{resource['flags:images/gb.svg']}");
+    background-image: url("/src/assets/flags/gb.svg");
 }
 
 .fi-gd {
-  background-image: url("#{resource['flags:images/gd.svg']}");
+    background-image: url("/src/assets/flags/gd.svg");
 }
 
 .fi-ge {
-  background-image: url("#{resource['flags:images/ge.svg']}");
+    background-image: url("/src/assets/flags/ge.svg");
 }
 
 .fi-gf {
-  background-image: url("#{resource['flags:images/gf.svg']}");
+    background-image: url("/src/assets/flags/gf.svg");
 }
 
 .fi-gg {
-  background-image: url("#{resource['flags:images/gg.svg']}");
+    background-image: url("/src/assets/flags/gg.svg");
 }
 
 .fi-gh {
-  background-image: url("#{resource['flags:images/gh.svg']}");
+    background-image: url("/src/assets/flags/gh.svg");
 }
 
 .fi-gi {
-  background-image: url("#{resource['flags:images/gi.svg']}");
+    background-image: url("/src/assets/flags/gi.svg");
 }
 
 .fi-gl {
-  background-image: url("#{resource['flags:images/gl.svg']}");
+    background-image: url("/src/assets/flags/gl.svg");
 }
 
 .fi-gm {
-  background-image: url("#{resource['flags:images/gm.svg']}");
+    background-image: url("/src/assets/flags/gm.svg");
 }
 
 .fi-gn {
-  background-image: url("#{resource['flags:images/gn.svg']}");
+    background-image: url("/src/assets/flags/gn.svg");
 }
 
 .fi-gp {
-  background-image: url("#{resource['flags:images/gp.svg']}");
+    background-image: url("/src/assets/flags/gp.svg");
 }
 
 .fi-gq {
-  background-image: url("#{resource['flags:images/gq.svg']}");
+    background-image: url("/src/assets/flags/gq.svg");
 }
 
 .fi-gr {
-  background-image: url("#{resource['flags:images/gr.svg']}");
+    background-image: url("/src/assets/flags/gr.svg");
 }
 
 .fi-gs {
-  background-image: url("#{resource['flags:images/gs.svg']}");
+    background-image: url("/src/assets/flags/gs.svg");
 }
 
 .fi-gt {
-  background-image: url("#{resource['flags:images/gt.svg']}");
+    background-image: url("/src/assets/flags/gt.svg");
 }
 
 .fi-gu {
-  background-image: url("#{resource['flags:images/gu.svg']}");
+    background-image: url("/src/assets/flags/gu.svg");
 }
 
 .fi-gw {
-  background-image: url("#{resource['flags:images/gw.svg']}");
+    background-image: url("/src/assets/flags/gw.svg");
 }
 
 .fi-gy {
-  background-image: url("#{resource['flags:images/gy.svg']}");
+    background-image: url("/src/assets/flags/gy.svg");
 }
 
 .fi-hk {
-  background-image: url("#{resource['flags:images/hk.svg']}");
+    background-image: url("/src/assets/flags/hk.svg");
 }
 
 .fi-hm {
-  background-image: url("#{resource['flags:images/hm.svg']}");
+    background-image: url("/src/assets/flags/hm.svg");
 }
 
 .fi-hn {
-  background-image: url("#{resource['flags:images/hn.svg']}");
+    background-image: url("/src/assets/flags/hn.svg");
 }
 
 .fi-hr {
-  background-image: url("#{resource['flags:images/hr.svg']}");
+    background-image: url("/src/assets/flags/hr.svg");
 }
 
 .fi-ht {
-  background-image: url("#{resource['flags:images/ht.svg']}");
+    background-image: url("/src/assets/flags/ht.svg");
 }
 
 .fi-hu {
-  background-image: url("#{resource['flags:images/hu.svg']}");
+    background-image: url("/src/assets/flags/hu.svg");
 }
 
 .fi-id {
-  background-image: url("#{resource['flags:images/id.svg']}");
+    background-image: url("/src/assets/flags/id.svg");
 }
 
 .fi-ie {
-  background-image: url("#{resource['flags:images/ie.svg']}");
+    background-image: url("/src/assets/flags/ie.svg");
 }
 
 .fi-il {
-  background-image: url("#{resource['flags:images/il.svg']}");
+    background-image: url("/src/assets/flags/il.svg");
 }
 
 .fi-im {
-  background-image: url("#{resource['flags:images/im.svg']}");
+    background-image: url("/src/assets/flags/im.svg");
 }
 
 .fi-in {
-  background-image: url("#{resource['flags:images/in.svg']}");
+    background-image: url("/src/assets/flags/in.svg");
 }
 
 .fi-io {
-  background-image: url("#{resource['flags:images/io.svg']}");
+    background-image: url("/src/assets/flags/io.svg");
 }
 
 .fi-iq {
-  background-image: url("#{resource['flags:images/iq.svg']}");
+    background-image: url("/src/assets/flags/iq.svg");
 }
 
 .fi-ir {
-  background-image: url("#{resource['flags:images/ir.svg']}");
+    background-image: url("/src/assets/flags/ir.svg");
 }
 
 .fi-is {
-  background-image: url("#{resource['flags:images/is.svg']}");
+    background-image: url("/src/assets/flags/is.svg");
 }
 
 .fi-it {
-  background-image: url("#{resource['flags:images/it.svg']}");
+    background-image: url("/src/assets/flags/it.svg");
 }
 
 .fi-je {
-  background-image: url("#{resource['flags:images/je.svg']}");
+    background-image: url("/src/assets/flags/je.svg");
 }
 
 .fi-jm {
-  background-image: url("#{resource['flags:images/jm.svg']}");
+    background-image: url("/src/assets/flags/jm.svg");
 }
 
 .fi-jo {
-  background-image: url("#{resource['flags:images/jo.svg']}");
+    background-image: url("/src/assets/flags/jo.svg");
 }
 
 .fi-jp {
-  background-image: url("#{resource['flags:images/jp.svg']}");
+    background-image: url("/src/assets/flags/jp.svg");
 }
 
 .fi-ke {
-  background-image: url("#{resource['flags:images/ke.svg']}");
+    background-image: url("/src/assets/flags/ke.svg");
 }
 
 .fi-kg {
-  background-image: url("#{resource['flags:images/kg.svg']}");
+    background-image: url("/src/assets/flags/kg.svg");
 }
 
 .fi-kh {
-  background-image: url("#{resource['flags:images/kh.svg']}");
+    background-image: url("/src/assets/flags/kh.svg");
 }
 
 .fi-ki {
-  background-image: url("#{resource['flags:images/ki.svg']}");
+    background-image: url("/src/assets/flags/ki.svg");
 }
 
 .fi-km {
-  background-image: url("#{resource['flags:images/km.svg']}");
+    background-image: url("/src/assets/flags/km.svg");
 }
 
 .fi-kn {
-  background-image: url("#{resource['flags:images/kn.svg']}");
+    background-image: url("/src/assets/flags/kn.svg");
 }
 
 .fi-kp {
-  background-image: url("#{resource['flags:images/kp.svg']}");
+    background-image: url("/src/assets/flags/kp.svg");
 }
 
 .fi-kr {
-  background-image: url("#{resource['flags:images/kr.svg']}");
+    background-image: url("/src/assets/flags/kr.svg");
 }
 
 .fi-kw {
-  background-image: url("#{resource['flags:images/kw.svg']}");
+    background-image: url("/src/assets/flags/kw.svg");
 }
 
 .fi-ky {
-  background-image: url("#{resource['flags:images/ky.svg']}");
+    background-image: url("/src/assets/flags/ky.svg");
 }
 
 .fi-kz {
-  background-image: url("#{resource['flags:images/kz.svg']}");
+    background-image: url("/src/assets/flags/kz.svg");
 }
 
 .fi-la {
-  background-image: url("#{resource['flags:images/la.svg']}");
+    background-image: url("/src/assets/flags/la.svg");
 }
 
 .fi-lb {
-  background-image: url("#{resource['flags:images/lb.svg']}");
+    background-image: url("/src/assets/flags/lb.svg");
 }
 
 .fi-lc {
-  background-image: url("#{resource['flags:images/lc.svg']}");
+    background-image: url("/src/assets/flags/lc.svg");
 }
 
 .fi-li {
-  background-image: url("#{resource['flags:images/li.svg']}");
+    background-image: url("/src/assets/flags/li.svg");
 }
 
 .fi-lk {
-  background-image: url("#{resource['flags:images/lk.svg']}");
+    background-image: url("/src/assets/flags/lk.svg");
 }
 
 .fi-lr {
-  background-image: url("#{resource['flags:images/lr.svg']}");
+    background-image: url("/src/assets/flags/lr.svg");
 }
 
 .fi-ls {
-  background-image: url("#{resource['flags:images/ls.svg']}");
+    background-image: url("/src/assets/flags/ls.svg");
 }
 
 .fi-lt {
-  background-image: url("#{resource['flags:images/lt.svg']}");
+    background-image: url("/src/assets/flags/lt.svg");
 }
 
 .fi-lu {
-  background-image: url("#{resource['flags:images/lu.svg']}");
+    background-image: url("/src/assets/flags/lu.svg");
 }
 
 .fi-lv {
-  background-image: url("#{resource['flags:images/lv.svg']}");
+    background-image: url("/src/assets/flags/lv.svg");
 }
 
 .fi-ly {
-  background-image: url("#{resource['flags:images/ly.svg']}");
+    background-image: url("/src/assets/flags/ly.svg");
 }
 
 .fi-ma {
-  background-image: url("#{resource['flags:images/ma.svg']}");
+    background-image: url("/src/assets/flags/ma.svg");
 }
 
 .fi-mc {
-  background-image: url("#{resource['flags:images/mc.svg']}");
+    background-image: url("/src/assets/flags/mc.svg");
 }
 
 .fi-md {
-  background-image: url("#{resource['flags:images/md.svg']}");
+    background-image: url("/src/assets/flags/md.svg");
 }
 
 .fi-me {
-  background-image: url("#{resource['flags:images/me.svg']}");
+    background-image: url("/src/assets/flags/me.svg");
 }
 
 .fi-mf {
-  background-image: url("#{resource['flags:images/mf.svg']}");
+    background-image: url("/src/assets/flags/mf.svg");
 }
 
 .fi-mg {
-  background-image: url("#{resource['flags:images/mg.svg']}");
+    background-image: url("/src/assets/flags/mg.svg");
 }
 
 .fi-mh {
-  background-image: url("#{resource['flags:images/mh.svg']}");
+    background-image: url("/src/assets/flags/mh.svg");
 }
 
 .fi-mk {
-  background-image: url("#{resource['flags:images/mk.svg']}");
+    background-image: url("/src/assets/flags/mk.svg");
 }
 
 .fi-ml {
-  background-image: url("#{resource['flags:images/ml.svg']}");
+    background-image: url("/src/assets/flags/ml.svg");
 }
 
 .fi-mm {
-  background-image: url("#{resource['flags:images/mm.svg']}");
+    background-image: url("/src/assets/flags/mm.svg");
 }
 
 .fi-mn {
-  background-image: url("#{resource['flags:images/mn.svg']}");
+    background-image: url("/src/assets/flags/mn.svg");
 }
 
 .fi-mo {
-  background-image: url("#{resource['flags:images/mo.svg']}");
+    background-image: url("/src/assets/flags/mo.svg");
 }
 
 .fi-mp {
-  background-image: url("#{resource['flags:images/mp.svg']}");
+    background-image: url("/src/assets/flags/mp.svg");
 }
 
 .fi-mq {
-  background-image: url("#{resource['flags:images/mq.svg']}");
+    background-image: url("/src/assets/flags/mq.svg");
 }
 
 .fi-mr {
-  background-image: url("#{resource['flags:images/mr.svg']}");
+    background-image: url("/src/assets/flags/mr.svg");
 }
 
 .fi-ms {
-  background-image: url("#{resource['flags:images/ms.svg']}");
+    background-image: url("/src/assets/flags/ms.svg");
 }
 
 .fi-mt {
-  background-image: url("#{resource['flags:images/mt.svg']}");
+    background-image: url("/src/assets/flags/mt.svg");
 }
 
 .fi-mu {
-  background-image: url("#{resource['flags:images/mu.svg']}");
+    background-image: url("/src/assets/flags/mu.svg");
 }
 
 .fi-mv {
-  background-image: url("#{resource['flags:images/mv.svg']}");
+    background-image: url("/src/assets/flags/mv.svg");
 }
 
 .fi-mw {
-  background-image: url("#{resource['flags:images/mw.svg']}");
+    background-image: url("/src/assets/flags/mw.svg");
 }
 
 .fi-mx {
-  background-image: url("#{resource['flags:images/mx.svg']}");
+    background-image: url("/src/assets/flags/mx.svg");
 }
 
 .fi-my {
-  background-image: url("#{resource['flags:images/my.svg']}");
+    background-image: url("/src/assets/flags/my.svg");
 }
 
 .fi-mz {
-  background-image: url("#{resource['flags:images/mz.svg']}");
+    background-image: url("/src/assets/flags/mz.svg");
 }
 
 .fi-na {
-  background-image: url("#{resource['flags:images/na.svg']}");
+    background-image: url("/src/assets/flags/na.svg");
 }
 
 .fi-nc {
-  background-image: url("#{resource['flags:images/nc.svg']}");
+    background-image: url("/src/assets/flags/nc.svg");
 }
 
 .fi-ne {
-  background-image: url("#{resource['flags:images/ne.svg']}");
+    background-image: url("/src/assets/flags/ne.svg");
 }
 
 .fi-nf {
-  background-image: url("#{resource['flags:images/nf.svg']}");
+    background-image: url("/src/assets/flags/nf.svg");
 }
 
 .fi-ng {
-  background-image: url("#{resource['flags:images/ng.svg']}");
+    background-image: url("/src/assets/flags/ng.svg");
 }
 
 .fi-ni {
-  background-image: url("#{resource['flags:images/ni.svg']}");
+    background-image: url("/src/assets/flags/ni.svg");
 }
 
 .fi-nl {
-  background-image: url("#{resource['flags:images/nl.svg']}");
+    background-image: url("/src/assets/flags/nl.svg");
 }
 
 .fi-no {
-  background-image: url("#{resource['flags:images/no.svg']}");
+    background-image: url("/src/assets/flags/no.svg");
 }
 
 .fi-np {
-  background-image: url("#{resource['flags:images/np.svg']}");
+    background-image: url("/src/assets/flags/np.svg");
 }
 
 .fi-nr {
-  background-image: url("#{resource['flags:images/nr.svg']}");
+    background-image: url("/src/assets/flags/nr.svg");
 }
 
 .fi-nu {
-  background-image: url("#{resource['flags:images/nu.svg']}");
+    background-image: url("/src/assets/flags/nu.svg");
 }
 
 .fi-nz {
-  background-image: url("#{resource['flags:images/nz.svg']}");
+    background-image: url("/src/assets/flags/nz.svg");
 }
 
 .fi-om {
-  background-image: url("#{resource['flags:images/om.svg']}");
+    background-image: url("/src/assets/flags/om.svg");
 }
 
 .fi-pa {
-  background-image: url("#{resource['flags:images/pa.svg']}");
+    background-image: url("/src/assets/flags/pa.svg");
 }
 
 .fi-pe {
-  background-image: url("#{resource['flags:images/pe.svg']}");
+    background-image: url("/src/assets/flags/pe.svg");
 }
 
 .fi-pf {
-  background-image: url("#{resource['flags:images/pf.svg']}");
+    background-image: url("/src/assets/flags/pf.svg");
 }
 
 .fi-pg {
-  background-image: url("#{resource['flags:images/pg.svg']}");
+    background-image: url("/src/assets/flags/pg.svg");
 }
 
 .fi-ph {
-  background-image: url("#{resource['flags:images/ph.svg']}");
+    background-image: url("/src/assets/flags/ph.svg");
 }
 
 .fi-pk {
-  background-image: url("#{resource['flags:images/pk.svg']}");
+    background-image: url("/src/assets/flags/pk.svg");
 }
 
 .fi-pl {
-  background-image: url("#{resource['flags:images/pl.svg']}");
+    background-image: url("/src/assets/flags/pl.svg");
 }
 
 .fi-pm {
-  background-image: url("#{resource['flags:images/pm.svg']}");
+    background-image: url("/src/assets/flags/pm.svg");
 }
 
 .fi-pn {
-  background-image: url("#{resource['flags:images/pn.svg']}");
+    background-image: url("/src/assets/flags/pn.svg");
 }
 
 .fi-pr {
-  background-image: url("#{resource['flags:images/pr.svg']}");
+    background-image: url("/src/assets/flags/pr.svg");
 }
 
 .fi-ps {
-  background-image: url("#{resource['flags:images/ps.svg']}");
+    background-image: url("/src/assets/flags/ps.svg");
 }
 
 .fi-pt {
-  background-image: url("#{resource['flags:images/pt.svg']}");
+    background-image: url("/src/assets/flags/pt.svg");
 }
 
 .fi-pw {
-  background-image: url("#{resource['flags:images/pw.svg']}");
+    background-image: url("/src/assets/flags/pw.svg");
 }
 
 .fi-py {
-  background-image: url("#{resource['flags:images/py.svg']}");
+    background-image: url("/src/assets/flags/py.svg");
 }
 
 .fi-qa {
-  background-image: url("#{resource['flags:images/qa.svg']}");
+    background-image: url("/src/assets/flags/qa.svg");
 }
 
 .fi-re {
-  background-image: url("#{resource['flags:images/re.svg']}");
+    background-image: url("/src/assets/flags/re.svg");
 }
 
 .fi-ro {
-  background-image: url("#{resource['flags:images/ro.svg']}");
+    background-image: url("/src/assets/flags/ro.svg");
 }
 
 .fi-rs {
-  background-image: url("#{resource['flags:images/rs.svg']}");
+    background-image: url("/src/assets/flags/rs.svg");
 }
 
 .fi-ru {
-  background-image: url("#{resource['flags:images/ru.svg']}");
+    background-image: url("/src/assets/flags/ru.svg");
 }
 
 .fi-rw {
-  background-image: url("#{resource['flags:images/rw.svg']}");
+    background-image: url("/src/assets/flags/rw.svg");
 }
 
 .fi-sa {
-  background-image: url("#{resource['flags:images/sa.svg']}");
+    background-image: url("/src/assets/flags/sa.svg");
 }
 
 .fi-sb {
-  background-image: url("#{resource['flags:images/sb.svg']}");
+    background-image: url("/src/assets/flags/sb.svg");
 }
 
 .fi-sc {
-  background-image: url("#{resource['flags:images/sc.svg']}");
+    background-image: url("/src/assets/flags/sc.svg");
 }
 
 .fi-sd {
-  background-image: url("#{resource['flags:images/sd.svg']}");
+    background-image: url("/src/assets/flags/sd.svg");
 }
 
 .fi-se {
-  background-image: url("#{resource['flags:images/se.svg']}");
+    background-image: url("/src/assets/flags/se.svg");
 }
 
 .fi-sg {
-  background-image: url("#{resource['flags:images/sg.svg']}");
+    background-image: url("/src/assets/flags/sg.svg");
 }
 
 .fi-sh {
-  background-image: url("#{resource['flags:images/sh.svg']}");
+    background-image: url("/src/assets/flags/sh.svg");
 }
 
 .fi-si {
-  background-image: url("#{resource['flags:images/si.svg']}");
+    background-image: url("/src/assets/flags/si.svg");
 }
 
 .fi-sj {
-  background-image: url("#{resource['flags:images/sj.svg']}");
+    background-image: url("/src/assets/flags/sj.svg");
 }
 
 .fi-sk {
-  background-image: url("#{resource['flags:images/sk.svg']}");
+    background-image: url("/src/assets/flags/sk.svg");
 }
 
 .fi-sl {
-  background-image: url("#{resource['flags:images/sl.svg']}");
+    background-image: url("/src/assets/flags/sl.svg");
 }
 
 .fi-sm {
-  background-image: url("#{resource['flags:images/sm.svg']}");
+    background-image: url("/src/assets/flags/sm.svg");
 }
 
 .fi-sn {
-  background-image: url("#{resource['flags:images/sn.svg']}");
+    background-image: url("/src/assets/flags/sn.svg");
 }
 
 .fi-so {
-  background-image: url("#{resource['flags:images/so.svg']}");
+    background-image: url("/src/assets/flags/so.svg");
 }
 
 .fi-sr {
-  background-image: url("#{resource['flags:images/sr.svg']}");
+    background-image: url("/src/assets/flags/sr.svg");
 }
 
 .fi-ss {
-  background-image: url("#{resource['flags:images/ss.svg']}");
+    background-image: url("/src/assets/flags/ss.svg");
 }
 
 .fi-st {
-  background-image: url("#{resource['flags:images/st.svg']}");
+    background-image: url("/src/assets/flags/st.svg");
 }
 
 .fi-sv {
-  background-image: url("#{resource['flags:images/sv.svg']}");
+    background-image: url("/src/assets/flags/sv.svg");
 }
 
 .fi-sx {
-  background-image: url("#{resource['flags:images/sx.svg']}");
+    background-image: url("/src/assets/flags/sx.svg");
 }
 
 .fi-sy {
-  background-image: url("#{resource['flags:images/sy.svg']}");
+    background-image: url("/src/assets/flags/sy.svg");
 }
 
 .fi-sz {
-  background-image: url("#{resource['flags:images/sz.svg']}");
+    background-image: url("/src/assets/flags/sz.svg");
 }
 
 .fi-tc {
-  background-image: url("#{resource['flags:images/tc.svg']}");
+    background-image: url("/src/assets/flags/tc.svg");
 }
 
 .fi-td {
-  background-image: url("#{resource['flags:images/td.svg']}");
+    background-image: url("/src/assets/flags/td.svg");
 }
 
 .fi-tf {
-  background-image: url("#{resource['flags:images/tf.svg']}");
+    background-image: url("/src/assets/flags/tf.svg");
 }
 
 .fi-tg {
-  background-image: url("#{resource['flags:images/tg.svg']}");
+    background-image: url("/src/assets/flags/tg.svg");
 }
 
 .fi-th {
-  background-image: url("#{resource['flags:images/th.svg']}");
+    background-image: url("/src/assets/flags/th.svg");
 }
 
 .fi-tj {
-  background-image: url("#{resource['flags:images/tj.svg']}");
+    background-image: url("/src/assets/flags/tj.svg");
 }
 
 .fi-tk {
-  background-image: url("#{resource['flags:images/tk.svg']}");
+    background-image: url("/src/assets/flags/tk.svg");
 }
 
 .fi-tl {
-  background-image: url("#{resource['flags:images/tl.svg']}");
+    background-image: url("/src/assets/flags/tl.svg");
 }
 
 .fi-tm {
-  background-image: url("#{resource['flags:images/tm.svg']}");
+    background-image: url("/src/assets/flags/tm.svg");
 }
 
 .fi-tn {
-  background-image: url("#{resource['flags:images/tn.svg']}");
+    background-image: url("/src/assets/flags/tn.svg");
 }
 
 .fi-to {
-  background-image: url("#{resource['flags:images/to.svg']}");
+    background-image: url("/src/assets/flags/to.svg");
 }
 
 .fi-tr {
-  background-image: url("#{resource['flags:images/tr.svg']}");
+    background-image: url("/src/assets/flags/tr.svg");
 }
 
 .fi-tt {
-  background-image: url("#{resource['flags:images/tt.svg']}");
+    background-image: url("/src/assets/flags/tt.svg");
 }
 
 .fi-tv {
-  background-image: url("#{resource['flags:images/tv.svg']}");
+    background-image: url("/src/assets/flags/tv.svg");
 }
 
 .fi-tw {
-  background-image: url("#{resource['flags:images/tw.svg']}");
+    background-image: url("/src/assets/flags/tw.svg");
 }
 
 .fi-tz {
-  background-image: url("#{resource['flags:images/tz.svg']}");
+    background-image: url("/src/assets/flags/tz.svg");
 }
 
 .fi-ua {
-  background-image: url("#{resource['flags:images/ua.svg']}");
+    background-image: url("/src/assets/flags/ua.svg");
 }
 
 .fi-ug {
-  background-image: url("#{resource['flags:images/ug.svg']}");
+    background-image: url("/src/assets/flags/ug.svg");
 }
 
 .fi-um {
-  background-image: url("#{resource['flags:images/um.svg']}");
+    background-image: url("/src/assets/flags/um.svg");
 }
 
 .fi-us {
-  background-image: url("#{resource['flags:images/us.svg']}");
+    background-image: url("/src/assets/flags/us.svg");
 }
 
 .fi-uy {
-  background-image: url("#{resource['flags:images/uy.svg']}");
+    background-image: url("/src/assets/flags/uy.svg");
 }
 
 .fi-uz {
-  background-image: url("#{resource['flags:images/uz.svg']}");
+    background-image: url("/src/assets/flags/uz.svg");
 }
 
 .fi-va {
-  background-image: url("#{resource['flags:images/va.svg']}");
+    background-image: url("/src/assets/flags/va.svg");
 }
 
 .fi-vc {
-  background-image: url("#{resource['flags:images/vc.svg']}");
+    background-image: url("/src/assets/flags/vc.svg");
 }
 
 .fi-ve {
-  background-image: url("#{resource['flags:images/ve.svg']}");
+    background-image: url("/src/assets/flags/ve.svg");
 }
 
 .fi-vg {
-  background-image: url("#{resource['flags:images/vg.svg']}");
+    background-image: url("/src/assets/flags/vg.svg");
 }
 
 .fi-vi {
-  background-image: url("#{resource['flags:images/vi.svg']}");
+    background-image: url("/src/assets/flags/vi.svg");
 }
 
 .fi-vn {
-  background-image: url("#{resource['flags:images/vn.svg']}");
+    background-image: url("/src/assets/flags/vn.svg");
 }
 
 .fi-vu {
-  background-image: url("#{resource['flags:images/vu.svg']}");
+    background-image: url("/src/assets/flags/vu.svg");
 }
 
 .fi-wf {
-  background-image: url("#{resource['flags:images/wf.svg']}");
+    background-image: url("/src/assets/flags/wf.svg");
 }
 
 .fi-ws {
-  background-image: url("#{resource['flags:images/ws.svg']}");
+    background-image: url("/src/assets/flags/ws.svg");
 }
 
 .fi-ye {
-  background-image: url("#{resource['flags:images/ye.svg']}");
+    background-image: url("/src/assets/flags/ye.svg");
 }
 
 .fi-yt {
-  background-image: url("#{resource['flags:images/yt.svg']}");
+    background-image: url("/src/assets/flags/yt.svg");
 }
 
 .fi-za {
-  background-image: url("#{resource['flags:images/za.svg']}");
+    background-image: url("/src/assets/flags/za.svg");
 }
 
 .fi-zm {
-  background-image: url("#{resource['flags:images/zm.svg']}");
+    background-image: url("/src/assets/flags/zm.svg");
 }
 
 .fi-zw {
-  background-image: url("#{resource['flags:images/zw.svg']}");
+    background-image: url("/src/assets/flags/zw.svg");
 }

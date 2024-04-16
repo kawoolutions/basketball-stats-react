@@ -3,9 +3,9 @@ import {Fragment, ReactNode, useEffect, useState} from "react";
 import {DataTable} from "primereact/datatable";
 import {Column} from "primereact/column";
 import {useTranslation} from "react-i18next";
-import Flag from "react-world-flags";
 // import {Toast} from "primereact/toast";
 
+import "../../assets/flags/flag-icons.css";
 
 export default function PersonManager() {
     const [persons, setPersons] = useState([]);
@@ -84,7 +84,6 @@ export default function PersonManager() {
                 {nodes}
             </div>
         );
-
     };
 
     const streetBody = (person: { streetName: string, houseNbr: string }) => {
@@ -97,11 +96,19 @@ export default function PersonManager() {
     const countryBody = (person: { countryCode: string }) => {
         const countryCode = person.countryCode;
 
+        if (!countryCode) {
+            return null;
+        }
+
+        const underscoredLocale = i18n.resolvedLanguage;
+        const language = underscoredLocale!.substring(0, 2);
+        const regionNames = new Intl.DisplayNames([language], {type: 'region'});
+        const countryName = regionNames.of(countryCode);
+
         return (
             <div style={{textAlign: "center"}}>
-                <Flag code={countryCode} fallback={<span>Unknown</span>} height="16" style={{verticalAlign: -2}}/>
-                {/*<img src="/assets/flags/flag_placeholder.png" alt={countryCode} width="30" className={`fi fi-${countryCode.toLowerCase()}`} />*/}
-                <span> ({countryCode})</span>
+                <img src="/src/assets/flags/flag_placeholder.png" alt={countryCode} width="30" className={`fi fi-${countryCode.toLowerCase()}`} />
+                <span>{countryName} ({countryCode})</span>
             </div>
         );
     };

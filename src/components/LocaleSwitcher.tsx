@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { supportedLngs } from "../i18n/config.ts";
 
 import {Dropdown} from "primereact/dropdown";
-import Flag from "react-world-flags";
 
 
 export default function LocaleSwitcher() {
@@ -28,7 +27,7 @@ export default function LocaleSwitcher() {
         const countryCode: string = option.code.substring(3).toLowerCase();
         return (
             <div className="country-item">
-                <Flag code={countryCode} fallback={t("common.flag.label")} height="16" style={{verticalAlign: -2}}/>
+                <img src="/src/assets/flags/flag_placeholder.png" alt={countryCode} width="30" className={`fi fi-${countryCode.toLowerCase()}`} />
                 <span style={{marginLeft: "8px"}}>{option.name}</span>
             </div>
         );
