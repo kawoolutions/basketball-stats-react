@@ -12,9 +12,9 @@ export default function PersonManager() {
     const [selectedPerson, setSelectedPerson] = useState({});
     const { t, i18n } = useTranslation();
 
-    const host = "3.79.245.148";
-    const port = "8080";
-    const url = "http://" + host + ":" + port + "/bbstats/ws/person/findall";
+    const host = "localhost";
+    const port = "8081";
+    const url = "http://" + host + ":" + port + "/rest/person/findall";
 
     useEffect(() => {
         fetch(url)
@@ -79,7 +79,12 @@ export default function PersonManager() {
                 style={{verticalAlign: "-1px"}}/>);
         }
 
-        return nodes;
+        return (
+            <div style={{textAlign: "center"}}>
+                {nodes}
+            </div>
+        );
+
     };
 
     const streetBody = (person: { streetName: string, houseNbr: string }) => {
