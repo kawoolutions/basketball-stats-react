@@ -10,6 +10,7 @@ import Home from "./pages/Home.tsx";
 import Login from "./pages/Login.tsx";
 import Players from "./pages/Players.tsx";
 import Teams from "./pages/Teams.tsx";
+import TeamDetails from "./pages/TeamDetails.tsx";
 import PersonManager from "./pages/admin/PersonManager.tsx";
 
 import "./i18n/config.ts";
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path: "/teams",
                 element: <Teams />
+            },
+            {
+                path: "/teams/details",
+                element: <TeamDetails />
             },
             {
                 path: "/players",
