@@ -6,6 +6,7 @@ import {useTranslation} from "react-i18next";
 // import {Toast} from "primereact/toast";
 
 import "../../assets/flags/flag-icons.css";
+import { CountryFlag } from "../../utils/Utils.tsx";
 
 export default function PersonManager() {
     const [persons, setPersons] = useState([]);
@@ -96,21 +97,7 @@ export default function PersonManager() {
     const countryBody = (person: { countryCode: string }) => {
         const countryCode = person.countryCode;
 
-        if (!countryCode) {
-            return null;
-        }
-
-        const underscoredLocale = i18n.resolvedLanguage;
-        const language = underscoredLocale!.substring(0, 2);
-        const regionNames = new Intl.DisplayNames([language], {type: 'region'});
-        const countryName = regionNames.of(countryCode);
-
-        return (
-            <div style={{textAlign: "center"}}>
-                <img src="/src/assets/flags/flag_placeholder.png" alt={countryCode} width="30" className={`fi fi-${countryCode.toLowerCase()}`} />
-                <span>{countryName} ({countryCode})</span>
-            </div>
-        );
+        return CountryFlag(countryCode);
     };
 
     const birthDateBody = (person: { birthDate: string }) => {
@@ -128,8 +115,6 @@ export default function PersonManager() {
     }
 
     const emailAddressesBody = (person: { emailAddresses: [] }) => {
-//        return person.emailAddresses.join(", ");
-
         return (
             person.emailAddresses.map<ReactNode>( (e, index) => {
                 return (
