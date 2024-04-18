@@ -2,53 +2,43 @@
 
 /********************************* debug styles *******************************/
 
-.border-none
-{
+.border-none {
     border: none !important;
 }
 
-.border-red
-{
+.border-red {
     border: 1px solid red;
 }
 
-.border-green
-{
+.border-green {
     border: 1px solid green;
 }
 
-.border-blue
-{
+.border-blue {
     border: 1px solid blue;
 }
 
-.border-cyan
-{
+.border-cyan {
     border: 1px solid cyan;
 }
 
-.border-magenta
-{
+.border-magenta {
     border: 1px solid magenta;
 }
 
-.border-yellow
-{
+.border-yellow {
     border: 1px solid yellow;
 }
 
-.border-orange
-{
+.border-orange {
     border: 1px solid orange;
 }
 
-.border-purple
-{
+.border-purple {
     border: 1px solid purple;
 }
 
-.border-lime
-{
+.border-lime {
     border: 1px solid lime;
 }
 

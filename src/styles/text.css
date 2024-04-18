@@ -2,42 +2,34 @@
 
 /******************************** text styles *********************************/
 
-.text-left
-{
+.text-left {
     text-align: left;
 }
 
-.text-center
-{
+.text-center {
     text-align: center;
 }
 
-.text-right
-{
+.text-right {
     text-align: right;
 }
 
-.text-nowrap
-{
+.text-nowrap {
     white-space: nowrap;
 }
 
-.text-bold
-{
+.text-bold {
     font-weight: bold;
 }
 
-.text-italic
-{
+.text-italic {
     font-style: italic;
 }
 
-.text-underline
-{
+.text-underline {
     text-decoration: underline;
 }
 
-.text-strike
-{
+.text-strike {
     text-decoration: line-through;
 }
