@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next";
-import { supportedLngs } from "../i18n/config.ts";
+import {useTranslation} from "react-i18next";
+import {supportedLngs} from "../i18n/config.ts";
 
 import {Dropdown} from "primereact/dropdown";
 
