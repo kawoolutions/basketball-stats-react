@@ -11,7 +11,7 @@ export function CountryFlag(countryCode: string) {
     const countryName = regionNames.of(countryCode);
 
     return (
-        <div style={{textAlign: "center"}}>
+        <div>
             <img src="/src/assets/flags/flag_placeholder.png" alt={countryCode} width="30" className={`fi fi-${countryCode.toLowerCase()}`} />
             <span>{countryName} ({countryCode})</span>
         </div>
