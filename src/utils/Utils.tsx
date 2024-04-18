@@ -1,5 +1,7 @@
 import i18n from "../i18n/config";
 
+import "../assets/flags/flag-icons.css";
+
 export function CountryFlag(countryCode: string) {
     if (!countryCode) {
         return null;

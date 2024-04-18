@@ -1,12 +1,13 @@
-import {Fragment, ReactNode, useEffect, useState} from "react";
+import { Fragment, ReactNode, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
-import {DataTable} from "primereact/datatable";
-import {Column} from "primereact/column";
-import {useTranslation} from "react-i18next";
-// import {Toast} from "primereact/toast";
+import { DataTable } from "primereact/datatable";
+import { Column } from "primereact/column";
+// import { Toast} from "primereact/toast";
 
-import "../../assets/flags/flag-icons.css";
 import { CountryFlag } from "../../utils/Utils.tsx";
+
+//import "../../assets/flags/flag-icons.css";
 
 export default function PersonManager() {
     const [persons, setPersons] = useState([]);

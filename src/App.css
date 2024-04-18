@@ -84,6 +84,15 @@ header {
     color: #DD7700;
 }
 
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
 /*#menu-form\:admin-menu .menu-link {
     margin-left: 5px !important;
     padding-top: 5px;
