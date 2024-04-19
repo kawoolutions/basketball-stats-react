@@ -2,6 +2,14 @@ import i18n from "../i18n/config";
 
 import "../assets/flags/flag-icons.css";
 
+export function SeasonLabel(seasonLabel: string, seasonStartYear: number) {
+    return (
+        <>
+            {seasonLabel} {seasonStartYear}/{(seasonStartYear + 1).toString().substring(2)}
+        </>
+    );
+}
+
 export function CountryFlag(countryCode: string) {
     if (!countryCode) {
         return null;
