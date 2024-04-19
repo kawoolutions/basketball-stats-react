@@ -67,9 +67,9 @@ export default function SeasonSwitcher() {
     
     const selectableSeasonsTemplate = (season: Season) => {
         return (
-            <div>
-                <span>{t("entity.season.singular.label")} {season.startYear}/{(season.startYear + 1).toString().substring(2)}</span>
-            </div>
+            <>
+                {t("entity.season.singular.label")} {season.startYear}/{(season.startYear + 1).toString().substring(2)}
+            </>
         );
     }
     
@@ -78,7 +78,7 @@ export default function SeasonSwitcher() {
         if (season) {
             return (
                 <>
-                {season.startYear}
+                {t("entity.season.singular.label")} {season.startYear}/{(season.startYear + 1).toString().substring(2)}
                 </>
             );
         }
@@ -89,7 +89,7 @@ export default function SeasonSwitcher() {
         );
     }
     
-    console.log("Dropdown selected season: " + selectedSeason + ", JSON = " + JSON.stringify((selectedSeason)));
+    console.log("Selected season: " + selectedSeason + ", JSON = " + JSON.stringify((selectedSeason)));
     if (!seasons) {
         return "Loading seasons...";
     } 
@@ -99,6 +99,8 @@ export default function SeasonSwitcher() {
     return (
         <Dropdown
             options={seasons}
+            optionValue="id"
+            optionLabel="startYear"
             value={selectedSeason}
             onChange={(e) => setSelectedSeason(e.value)}
             placeholder={t("common.unknown.label")}
