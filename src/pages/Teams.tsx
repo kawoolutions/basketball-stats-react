@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
 
 import { CountryFlag } from "../utils/Utils";
+import SeasonSwitcher from "../components/SeasonSwitcher.tsx";
 
 interface TeamDto {
 
@@ -43,6 +44,8 @@ export default function Teams() {
     const port = "8081";
     const url = "http://" + host + ":" + port + "/rest/teamdto/findall/2019";
 
+    const { season } = useParams();
+
     useEffect(() => {
         fetch(url)
             .then(response => response.json())
@@ -75,7 +78,10 @@ export default function Teams() {
 
     return (
         <div style={{marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10}}>
-            <h2>{t("entity.team.plural.heading")}</h2>
+
+            <h2>{t("entity.team.plural.heading")} {season}</h2>
+
+            <SeasonSwitcher />
 
             {/*<Toast ref={toast}/>*/}
 

@@ -35,13 +35,14 @@ export default function LocaleSwitcher() {
 
 //    console.log("Dropdown code: " + i18n.resolvedLanguage);
     return (
-        <Dropdown value={i18n.resolvedLanguage}
-                  onChange={(e) => i18n.changeLanguage(e.value)}
-                  options={supportedLngs}
-                  optionValue="code"
-                  optionLabel="name"
-                  placeholder={t("common.unknown.label")}
-                  itemTemplate={selectableCountriesTemplate}
-                  style={{width: "150px"}}/>
+        <Dropdown
+            options={supportedLngs}
+            optionValue="code"
+            optionLabel="name"
+            value={i18n.resolvedLanguage}
+            onChange={(e) => i18n.changeLanguage(e.value)}
+            placeholder={t("common.unknown.label")}
+            itemTemplate={selectableCountriesTemplate}
+            style={{width: "150px"}}/>
     );
 }
